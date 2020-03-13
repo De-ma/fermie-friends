@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B4E88222411E0770021E6C7 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E88212411E0770021E6C7 /* FriendsViewController.swift */; };
+		9BCB2DFA2410885200ADF13F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2DF92410885200ADF13F /* AppDelegate.swift */; };
+		9BCB2DFC2410885200ADF13F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2DFB2410885200ADF13F /* SceneDelegate.swift */; };
+		9BCB2DFE2410885200ADF13F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2DFD2410885200ADF13F /* ViewController.swift */; };
+		9BCB2E032410885400ADF13F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BCB2E022410885400ADF13F /* Assets.xcassets */; };
+		9BCB2E062410885400ADF13F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCB2E042410885400ADF13F /* LaunchScreen.storyboard */; };
+		9BCB2E112410885400ADF13F /* Fremie_FriendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2E102410885400ADF13F /* Fremie_FriendsTests.swift */; };
+		9BCB2E1C2410885400ADF13F /* Fremie_FriendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2E1B2410885400ADF13F /* Fremie_FriendsUITests.swift */; };
+		9BCB2E2C2410941900ADF13F /* bacteria.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCB2E2B2410941800ADF13F /* bacteria.png */; };
+		9BDCCC8D241B12810079DA74 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDCCC8C241B12810079DA74 /* Friend.swift */; };
+		9BDCCC8F241BB99A0079DA74 /* NewFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDCCC8E241BB99A0079DA74 /* NewFriendViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BCB2E0D2410885400ADF13F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BCB2DEE2410885200ADF13F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BCB2DF52410885200ADF13F;
+			remoteInfo = "Fremie Friends";
+		};
+		9BCB2E182410885400ADF13F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BCB2DEE2410885200ADF13F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BCB2DF52410885200ADF13F;
+			remoteInfo = "Fremie Friends";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9B4E88212411E0770021E6C7 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		9BCB2DF62410885200ADF13F /* Fremie Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fremie Friends.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BCB2DF92410885200ADF13F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BCB2DFB2410885200ADF13F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9BCB2DFD2410885200ADF13F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BCB2E022410885400ADF13F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BCB2E052410885400ADF13F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BCB2E072410885400ADF13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BCB2E0C2410885400ADF13F /* Fremie FriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fremie FriendsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BCB2E102410885400ADF13F /* Fremie_FriendsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fremie_FriendsTests.swift; sourceTree = "<group>"; };
+		9BCB2E122410885400ADF13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BCB2E172410885400ADF13F /* Fremie FriendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fremie FriendsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BCB2E1B2410885400ADF13F /* Fremie_FriendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fremie_FriendsUITests.swift; sourceTree = "<group>"; };
+		9BCB2E1D2410885400ADF13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BCB2E2B2410941800ADF13F /* bacteria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bacteria.png; path = ../../../Downloads/bacteria.png; sourceTree = "<group>"; };
+		9BDCCC8C241B12810079DA74 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		9BDCCC8E241BB99A0079DA74 /* NewFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFriendViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BCB2DF32410885200ADF13F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCB2E092410885400ADF13F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCB2E142410885400ADF13F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BCB2DED2410885200ADF13F = {
+			isa = PBXGroup;
+			children = (
+				9BCB2DF82410885200ADF13F /* Fremie Friends */,
+				9BCB2E0F2410885400ADF13F /* Fremie FriendsTests */,
+				9BCB2E1A2410885400ADF13F /* Fremie FriendsUITests */,
+				9BCB2DF72410885200ADF13F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BCB2DF72410885200ADF13F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BCB2DF62410885200ADF13F /* Fremie Friends.app */,
+				9BCB2E0C2410885400ADF13F /* Fremie FriendsTests.xctest */,
+				9BCB2E172410885400ADF13F /* Fremie FriendsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BCB2DF82410885200ADF13F /* Fremie Friends */ = {
+			isa = PBXGroup;
+			children = (
+				9BCB2DF92410885200ADF13F /* AppDelegate.swift */,
+				9BDCCC8C241B12810079DA74 /* Friend.swift */,
+				9BCB2DFB2410885200ADF13F /* SceneDelegate.swift */,
+				9BCB2DFD2410885200ADF13F /* ViewController.swift */,
+				9BDCCC8E241BB99A0079DA74 /* NewFriendViewController.swift */,
+				9B4E88212411E0770021E6C7 /* FriendsViewController.swift */,
+				9BCB2E2B2410941800ADF13F /* bacteria.png */,
+				9BCB2E022410885400ADF13F /* Assets.xcassets */,
+				9BCB2E042410885400ADF13F /* LaunchScreen.storyboard */,
+				9BCB2E072410885400ADF13F /* Info.plist */,
+			);
+			path = "Fremie Friends";
+			sourceTree = "<group>";
+		};
+		9BCB2E0F2410885400ADF13F /* Fremie FriendsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BCB2E102410885400ADF13F /* Fremie_FriendsTests.swift */,
+				9BCB2E122410885400ADF13F /* Info.plist */,
+			);
+			path = "Fremie FriendsTests";
+			sourceTree = "<group>";
+		};
+		9BCB2E1A2410885400ADF13F /* Fremie FriendsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9BCB2E1B2410885400ADF13F /* Fremie_FriendsUITests.swift */,
+				9BCB2E1D2410885400ADF13F /* Info.plist */,
+			);
+			path = "Fremie FriendsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BCB2DF52410885200ADF13F /* Fremie Friends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BCB2E202410885400ADF13F /* Build configuration list for PBXNativeTarget "Fremie Friends" */;
+			buildPhases = (
+				9BCB2DF22410885200ADF13F /* Sources */,
+				9BCB2DF32410885200ADF13F /* Frameworks */,
+				9BCB2DF42410885200ADF13F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fremie Friends";
+			productName = "Fremie Friends";
+			productReference = 9BCB2DF62410885200ADF13F /* Fremie Friends.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BCB2E0B2410885400ADF13F /* Fremie FriendsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BCB2E232410885400ADF13F /* Build configuration list for PBXNativeTarget "Fremie FriendsTests" */;
+			buildPhases = (
+				9BCB2E082410885400ADF13F /* Sources */,
+				9BCB2E092410885400ADF13F /* Frameworks */,
+				9BCB2E0A2410885400ADF13F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BCB2E0E2410885400ADF13F /* PBXTargetDependency */,
+			);
+			name = "Fremie FriendsTests";
+			productName = "Fremie FriendsTests";
+			productReference = 9BCB2E0C2410885400ADF13F /* Fremie FriendsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9BCB2E162410885400ADF13F /* Fremie FriendsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BCB2E262410885400ADF13F /* Build configuration list for PBXNativeTarget "Fremie FriendsUITests" */;
+			buildPhases = (
+				9BCB2E132410885400ADF13F /* Sources */,
+				9BCB2E142410885400ADF13F /* Frameworks */,
+				9BCB2E152410885400ADF13F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BCB2E192410885400ADF13F /* PBXTargetDependency */,
+			);
+			name = "Fremie FriendsUITests";
+			productName = "Fremie FriendsUITests";
+			productReference = 9BCB2E172410885400ADF13F /* Fremie FriendsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BCB2DEE2410885200ADF13F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Dema Abu Adas";
+				TargetAttributes = {
+					9BCB2DF52410885200ADF13F = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					9BCB2E0B2410885400ADF13F = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 9BCB2DF52410885200ADF13F;
+					};
+					9BCB2E162410885400ADF13F = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 9BCB2DF52410885200ADF13F;
+					};
+				};
+			};
+			buildConfigurationList = 9BCB2DF12410885200ADF13F /* Build configuration list for PBXProject "Fremie Friends" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BCB2DED2410885200ADF13F;
+			productRefGroup = 9BCB2DF72410885200ADF13F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BCB2DF52410885200ADF13F /* Fremie Friends */,
+				9BCB2E0B2410885400ADF13F /* Fremie FriendsTests */,
+				9BCB2E162410885400ADF13F /* Fremie FriendsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BCB2DF42410885200ADF13F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BCB2E062410885400ADF13F /* LaunchScreen.storyboard in Resources */,
+				9BCB2E2C2410941900ADF13F /* bacteria.png in Resources */,
+				9BCB2E032410885400ADF13F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCB2E0A2410885400ADF13F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCB2E152410885400ADF13F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BCB2DF22410885200ADF13F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDCCC8F241BB99A0079DA74 /* NewFriendViewController.swift in Sources */,
+				9BCB2DFE2410885200ADF13F /* ViewController.swift in Sources */,
+				9B4E88222411E0770021E6C7 /* FriendsViewController.swift in Sources */,
+				9BDCCC8D241B12810079DA74 /* Friend.swift in Sources */,
+				9BCB2DFA2410885200ADF13F /* AppDelegate.swift in Sources */,
+				9BCB2DFC2410885200ADF13F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCB2E082410885400ADF13F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BCB2E112410885400ADF13F /* Fremie_FriendsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCB2E132410885400ADF13F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BCB2E1C2410885400ADF13F /* Fremie_FriendsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BCB2E0E2410885400ADF13F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BCB2DF52410885200ADF13F /* Fremie Friends */;
+			targetProxy = 9BCB2E0D2410885400ADF13F /* PBXContainerItemProxy */;
+		};
+		9BCB2E192410885400ADF13F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BCB2DF52410885200ADF13F /* Fremie Friends */;
+			targetProxy = 9BCB2E182410885400ADF13F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9BCB2E042410885400ADF13F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BCB2E052410885400ADF13F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BCB2E1E2410885400ADF13F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BCB2E1F2410885400ADF13F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BCB2E212410885400ADF13F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Fremie Friends/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dema.Fremie-Friends";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BCB2E222410885400ADF13F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Fremie Friends/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dema.Fremie-Friends";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BCB2E242410885400ADF13F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Fremie FriendsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dema.Fremie-FriendsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fremie Friends.app/Fremie Friends";
+			};
+			name = Debug;
+		};
+		9BCB2E252410885400ADF13F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Fremie FriendsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dema.Fremie-FriendsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fremie Friends.app/Fremie Friends";
+			};
+			name = Release;
+		};
+		9BCB2E272410885400ADF13F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Fremie FriendsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dema.Fremie-FriendsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fremie Friends";
+			};
+			name = Debug;
+		};
+		9BCB2E282410885400ADF13F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Fremie FriendsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dema.Fremie-FriendsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fremie Friends";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BCB2DF12410885200ADF13F /* Build configuration list for PBXProject "Fremie Friends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BCB2E1E2410885400ADF13F /* Debug */,
+				9BCB2E1F2410885400ADF13F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BCB2E202410885400ADF13F /* Build configuration list for PBXNativeTarget "Fremie Friends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BCB2E212410885400ADF13F /* Debug */,
+				9BCB2E222410885400ADF13F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BCB2E232410885400ADF13F /* Build configuration list for PBXNativeTarget "Fremie FriendsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BCB2E242410885400ADF13F /* Debug */,
+				9BCB2E252410885400ADF13F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BCB2E262410885400ADF13F /* Build configuration list for PBXNativeTarget "Fremie FriendsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BCB2E272410885400ADF13F /* Debug */,
+				9BCB2E282410885400ADF13F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BCB2DEE2410885200ADF13F /* Project object */;
+}
