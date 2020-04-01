@@ -16,12 +16,30 @@ class FriendsListViewController: UITableViewController {
         
         let nib = UINib(nibName: "ItemTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: cellId)
+        tableView.isScrollEnabled = false
         
         //add the navigation thing
         self.title = "Fermie Friends!"
         self.navigationItem.setRightBarButton(UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(newFriend)), animated: true)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Friend")
+        
+        do {
+            friends = try managedContext.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Couldnt not fetch, stop trying to make it happen. \(error), \(error.userInfo)")
+        }
+    }
+
     @objc func newFriend() {
         let newFriendViewController = NewFriendViewController()
         self.navigationController?.pushViewController(newFriendViewController, animated: true)
@@ -57,9 +75,6 @@ class FriendsListViewController: UITableViewController {
         } catch let error as NSError {
             print("Saving FAILED. \(error), \(error.userInfo)")
         }
-
-        
-        
     }
 }
 

@@ -17,11 +17,22 @@ class NewFriendViewController: UIViewController {
         buildViews()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        UIView.animate(withDuration: 1,
+                     delay: 1.2,
+                     options: .curveEaseInOut,
+                     animations: { [weak self] in
+                        self?.view.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
+        }, completion: nil)
+        
+        animate()
+
+    }
+    
     func buildViews() {
         view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        self.navigationController?.isNavigationBarHidden = false
-        self.navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-        self.navigationController?.navigationBar.topItem?.title = "Creating A Friend"
         
         let friendLabel: UILabel = {
             let label = UILabel()
@@ -158,6 +169,18 @@ class NewFriendViewController: UIViewController {
             }}))
         self.present(alert, animated:  true, completion: nil)
 
+    }
+    
+    private func animate() {
+        let options: UIView.AnimationOptions = [.curveEaseInOut, .repeat, .autoreverse]
+        
+        UIView.animate(withDuration: 2.9,
+                         delay: 0,
+                         options: options,
+                         animations: { [weak self] in
+                          self?.friendType.frame.size.height *= 1.18
+                          self?.friendType.frame.size.width *= 1.18
+          }, completion: nil)
     }
 }
 
