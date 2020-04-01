@@ -1,5 +1,6 @@
 import UIKit
 
+//we dont use this anymore !!!!!!!!!
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -27,15 +28,11 @@ class ViewController: UIViewController {
             return imgView
         }()
         
-
         view.addSubview(bacteria)
         view.addSubview(startBtn)
 
         bacteria.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         bacteria.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
-        // I dont want it to be equal to the top anchor, I want it a certain distance from the top anchor
-        // so uhhh what can I do ?!?!
-//        bacteria.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
         bacteria.widthAnchor.constraint(equalToConstant: 300).isActive = true
         bacteria.heightAnchor.constraint(equalToConstant: 296).isActive = true
         
@@ -48,10 +45,6 @@ class ViewController: UIViewController {
 
     @objc func newFriend() {
         print("huh")
-//        let addNewFriends = NewFriendView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
-//        self.view.addSubview(addNewFriends)
          self.navigationController?.pushViewController(NewFriendViewController(), animated: true)
-//        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
-

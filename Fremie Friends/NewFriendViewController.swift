@@ -1,15 +1,16 @@
 import Foundation
 import UIKit
 
-class NewFriendViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+class NewFriendViewController: UIViewController {
+    
+    var completionHandler:((localFriend) -> String)?
     
     let friendOptions = ["Kombucha", "Kimchi", "Kefir", "Sourdough"]
-    var friends: [Friend] = []
     
     var friendName = UITextField()
     var friendType = UIPickerView()
     var datePicker = UIDatePicker()
-    var selectedRow = ""
+    var selectedRow = "Kombucha"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,21 +72,6 @@ class NewFriendViewController: UIViewController, UITextFieldDelegate, UIPickerVi
             return dPicker
         }()
         
-        let intervalType = UIPickerView()
-        
-        let intervalLabel: UILabel = {
-            let label = UILabel()
-            label.text = "Feeding Interval Label"
-            return label
-        }()
-        
-        let intervalTextField: UITextField = {
-            let textField = UITextField()
-            textField.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-            textField.layer.borderWidth = 1
-            return textField
-        }()
-        
         let addFriendButton: UIButton = {
             let button = UIButton()
             button.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
@@ -125,17 +111,15 @@ class NewFriendViewController: UIViewController, UITextFieldDelegate, UIPickerVi
         view.addSubview(addFriendButton)
         
         mainStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
-         mainStackView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 20).isActive = true
-         mainStackView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: 0).isActive = true
+        mainStackView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 20).isActive = true
+        mainStackView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: 0).isActive = true
 
         friendName.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width / 2).isActive = true
         friendName.heightAnchor.constraint(equalTo: friendLabel.heightAnchor).isActive = true
         friendType.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
-        
         friendType.heightAnchor.constraint(equalToConstant: 100).isActive = true
-        
-        datePicker.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
 
+        datePicker.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
         
         addFriendButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50).isActive = true
         addFriendButton.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 10).isActive = true
@@ -153,17 +137,15 @@ class NewFriendViewController: UIViewController, UITextFieldDelegate, UIPickerVi
         print(selectedDate)
         print(friendName.text ?? "No name :(")
         print(selectedRow)
-        let friend = Friend(name: friendName.text ?? "No name :(", birthday: selectedDate, type: selectedRow)
-        friends.append(friend)
+        let friend = localFriend(localName: friendName.text ?? "No name :(", localBirthday: selectedDate, localType: selectedRow)
 
         let alert = UIAlertController(title: "Friend Created!", message: "Yay!!!!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
               switch action.style{
               case .default:
                     print("default")
-                    self.navigationController?.isNavigationBarHidden = true
+                    _ = self.completionHandler?(friend)
                     self.navigationController?.popViewController(animated: true)
-
               case .cancel:
                     print("cancel")
 
@@ -179,13 +161,17 @@ class NewFriendViewController: UIViewController, UITextFieldDelegate, UIPickerVi
     }
 }
 
-extension NewFriendViewController {
+extension NewFriendViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField.isFirstResponder {
-            textField
+            textField.placeholder = nil
         }
     }
+    
+}
+
+extension NewFriendViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

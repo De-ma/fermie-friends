@@ -1,11 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Fremie Friends
-//
-//  Created by Dema Abu Adas on 2020-03-04.
-//  Copyright © 2020 Dema Abu Adas. All rights reserved.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -23,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
             let window = UIWindow(windowScene: windowScene)
 
-            window.rootViewController =  UINavigationController(rootViewController: ViewController())
+            window.rootViewController =  UINavigationController(rootViewController: FriendsListViewController())
 
             self.window = window
             window.makeKeyAndVisible()

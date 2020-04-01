@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B4E88222411E0770021E6C7 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E88212411E0770021E6C7 /* FriendsViewController.swift */; };
+		9B23E8692434CC5200DD9AC5 /* FriendsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B23E8672434CC5200DD9AC5 /* FriendsModel.xcdatamodeld */; };
+		9B445AB6241C4DB0009DA00F /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B445AB4241C4DB0009DA00F /* ItemTableViewCell.swift */; };
+		9B445AB7241C4DB0009DA00F /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B445AB5241C4DB0009DA00F /* ItemTableViewCell.xib */; };
+		9B995D6D241C654A00AD9913 /* FriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B995D6C241C654A00AD9913 /* FriendsListViewController.swift */; };
 		9BCB2DFA2410885200ADF13F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2DF92410885200ADF13F /* AppDelegate.swift */; };
 		9BCB2DFC2410885200ADF13F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2DFB2410885200ADF13F /* SceneDelegate.swift */; };
 		9BCB2DFE2410885200ADF13F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2DFD2410885200ADF13F /* ViewController.swift */; };
@@ -15,8 +18,7 @@
 		9BCB2E062410885400ADF13F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCB2E042410885400ADF13F /* LaunchScreen.storyboard */; };
 		9BCB2E112410885400ADF13F /* Fremie_FriendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2E102410885400ADF13F /* Fremie_FriendsTests.swift */; };
 		9BCB2E1C2410885400ADF13F /* Fremie_FriendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2E1B2410885400ADF13F /* Fremie_FriendsUITests.swift */; };
-		9BCB2E2C2410941900ADF13F /* bacteria.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCB2E2B2410941800ADF13F /* bacteria.png */; };
-		9BDCCC8D241B12810079DA74 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDCCC8C241B12810079DA74 /* Friend.swift */; };
+		9BDCCC8D241B12810079DA74 /* localFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDCCC8C241B12810079DA74 /* localFriend.swift */; };
 		9BDCCC8F241BB99A0079DA74 /* NewFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDCCC8E241BB99A0079DA74 /* NewFriendViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9B4E88212411E0770021E6C7 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		9B23E8642434253800DD9AC5 /* Fremie Friends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fremie Friends.entitlements"; sourceTree = "<group>"; };
+		9B23E8682434CC5200DD9AC5 /* FriendsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendsModel.xcdatamodel; sourceTree = "<group>"; };
+		9B445AB4241C4DB0009DA00F /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		9B445AB5241C4DB0009DA00F /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		9B995D6C241C654A00AD9913 /* FriendsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewController.swift; sourceTree = "<group>"; };
 		9BCB2DF62410885200ADF13F /* Fremie Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fremie Friends.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCB2DF92410885200ADF13F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BCB2DFB2410885200ADF13F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,8 +58,7 @@
 		9BCB2E172410885400ADF13F /* Fremie FriendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fremie FriendsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCB2E1B2410885400ADF13F /* Fremie_FriendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fremie_FriendsUITests.swift; sourceTree = "<group>"; };
 		9BCB2E1D2410885400ADF13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BCB2E2B2410941800ADF13F /* bacteria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bacteria.png; path = ../../../Downloads/bacteria.png; sourceTree = "<group>"; };
-		9BDCCC8C241B12810079DA74 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		9BDCCC8C241B12810079DA74 /* localFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localFriend.swift; sourceTree = "<group>"; };
 		9BDCCC8E241BB99A0079DA74 /* NewFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFriendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,13 +110,16 @@
 		9BCB2DF82410885200ADF13F /* Fremie Friends */ = {
 			isa = PBXGroup;
 			children = (
+				9B23E8642434253800DD9AC5 /* Fremie Friends.entitlements */,
 				9BCB2DF92410885200ADF13F /* AppDelegate.swift */,
-				9BDCCC8C241B12810079DA74 /* Friend.swift */,
+				9B23E8672434CC5200DD9AC5 /* FriendsModel.xcdatamodeld */,
+				9BDCCC8C241B12810079DA74 /* localFriend.swift */,
 				9BCB2DFB2410885200ADF13F /* SceneDelegate.swift */,
 				9BCB2DFD2410885200ADF13F /* ViewController.swift */,
 				9BDCCC8E241BB99A0079DA74 /* NewFriendViewController.swift */,
-				9B4E88212411E0770021E6C7 /* FriendsViewController.swift */,
-				9BCB2E2B2410941800ADF13F /* bacteria.png */,
+				9B995D6C241C654A00AD9913 /* FriendsListViewController.swift */,
+				9B445AB4241C4DB0009DA00F /* ItemTableViewCell.swift */,
+				9B445AB5241C4DB0009DA00F /* ItemTableViewCell.xib */,
 				9BCB2E022410885400ADF13F /* Assets.xcassets */,
 				9BCB2E042410885400ADF13F /* LaunchScreen.storyboard */,
 				9BCB2E072410885400ADF13F /* Info.plist */,
@@ -242,8 +250,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BCB2E062410885400ADF13F /* LaunchScreen.storyboard in Resources */,
-				9BCB2E2C2410941900ADF13F /* bacteria.png in Resources */,
 				9BCB2E032410885400ADF13F /* Assets.xcassets in Resources */,
+				9B445AB7241C4DB0009DA00F /* ItemTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +278,11 @@
 			files = (
 				9BDCCC8F241BB99A0079DA74 /* NewFriendViewController.swift in Sources */,
 				9BCB2DFE2410885200ADF13F /* ViewController.swift in Sources */,
-				9B4E88222411E0770021E6C7 /* FriendsViewController.swift in Sources */,
-				9BDCCC8D241B12810079DA74 /* Friend.swift in Sources */,
+				9BDCCC8D241B12810079DA74 /* localFriend.swift in Sources */,
 				9BCB2DFA2410885200ADF13F /* AppDelegate.swift in Sources */,
+				9B445AB6241C4DB0009DA00F /* ItemTableViewCell.swift in Sources */,
+				9B23E8692434CC5200DD9AC5 /* FriendsModel.xcdatamodeld in Sources */,
+				9B995D6D241C654A00AD9913 /* FriendsListViewController.swift in Sources */,
 				9BCB2DFC2410885200ADF13F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +448,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Fremie Friends/Fremie Friends.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Fremie Friends/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -446,6 +459,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dema.Fremie-Friends";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,7 +469,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Fremie Friends/Fremie Friends.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Fremie Friends/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,6 +480,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dema.Fremie-Friends";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -588,6 +606,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9B23E8672434CC5200DD9AC5 /* FriendsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9B23E8682434CC5200DD9AC5 /* FriendsModel.xcdatamodel */,
+			);
+			currentVersion = 9B23E8682434CC5200DD9AC5 /* FriendsModel.xcdatamodel */;
+			path = FriendsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9BCB2DEE2410885200ADF13F /* Project object */;
 }
