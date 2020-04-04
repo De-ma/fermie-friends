@@ -5,6 +5,7 @@ import CoreData
 class FriendsListViewController: UITableViewController {
         
     var cellId = "cell"
+    var stuff = ["BUTT", "ASS"]
     var friends: [NSManagedObject] = []
     
     var appDelegate = UIApplication.shared.delegate as? AppDelegate
@@ -52,6 +53,17 @@ class FriendsListViewController: UITableViewController {
 
     }
     
+    @objc func openMenu(){
+        let newFriendViewController = NewFriendViewController()
+        self.navigationController?.pushViewController(newFriendViewController, animated: true)
+        newFriendViewController.completionHandler = { friend in
+            
+            self.saveFriend(friend: friend)
+            self.tableView.reloadData()
+            return "all good in the hood"
+        }
+    }
+    
     func saveFriend(friend: localFriend) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
@@ -88,7 +100,8 @@ extension FriendsListViewController {
         
         let friend = friends[indexPath.row]
         
-        cell.itemTitle.text = friend.value(forKey: "name") as? String
+//        cell.itemTitle.text = friend.value(forKey: "name") as? String
+        cell.itemTitle.text = stuff[indexPath.row]
         let friendType = friend.value(forKey: "type") as? String
         
         cell.itemImage.image = UIImage(named: friendType?.lowercased() ?? "kombucha") //change default maybe to ?
@@ -103,6 +116,5 @@ extension FriendsListViewController {
         
         self.appDelegate?.scheduleNotification(notificationType: notificationType)
         tableView.deselectRow(at: indexPath, animated: true)
-
     }
 }

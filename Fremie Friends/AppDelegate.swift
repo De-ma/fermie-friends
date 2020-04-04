@@ -115,7 +115,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
             notif.body = "Time to feed: " + notificationType
             notif.sound = UNNotificationSound.default
             notif.badge = 1
-            notif.categoryIdentifier = "Delete Notification Type"
+            notif.categoryIdentifier = "Feed Notification Type"
             return notif
         }()
         

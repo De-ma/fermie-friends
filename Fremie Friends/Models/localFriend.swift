@@ -6,3 +6,11 @@ struct localFriend {
     var feedingInterval: String?
     var localType: String
 }
+
+
+enum localType {
+    case kombucha
+    case sourdough
+    case kimchi
+    case kefir
+}

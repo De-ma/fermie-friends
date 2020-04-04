@@ -20,14 +20,14 @@ class NewFriendViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-        UIView.animate(withDuration: 1,
-                     delay: 1.2,
-                     options: .curveEaseInOut,
-                     animations: { [weak self] in
-                        self?.view.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
-        }, completion: nil)
+//        UIView.animate(withDuration: 1,
+//                     delay: 1.2,
+//                     options: .curveEaseInOut,
+//                     animations: { [weak self] in
+//                        self?.view.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
+//        }, completion: nil)
         
-        animate()
+//        animate()
 
     }
     
@@ -132,7 +132,7 @@ class NewFriendViewController: UIViewController {
 
         datePicker.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
         
-        addFriendButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50).isActive = true
+        addFriendButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30).isActive = true
         addFriendButton.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 10).isActive = true
         addFriendButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 20 ).isActive = true
         addFriendButton.heightAnchor.constraint(equalToConstant: 50).isActive = true

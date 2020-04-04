@@ -13,13 +13,16 @@
 		9B995D6D241C654A00AD9913 /* FriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B995D6C241C654A00AD9913 /* FriendsListViewController.swift */; };
 		9BCB2DFA2410885200ADF13F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2DF92410885200ADF13F /* AppDelegate.swift */; };
 		9BCB2DFC2410885200ADF13F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2DFB2410885200ADF13F /* SceneDelegate.swift */; };
-		9BCB2DFE2410885200ADF13F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2DFD2410885200ADF13F /* ViewController.swift */; };
 		9BCB2E032410885400ADF13F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BCB2E022410885400ADF13F /* Assets.xcassets */; };
 		9BCB2E062410885400ADF13F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCB2E042410885400ADF13F /* LaunchScreen.storyboard */; };
 		9BCB2E112410885400ADF13F /* Fremie_FriendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2E102410885400ADF13F /* Fremie_FriendsTests.swift */; };
 		9BCB2E1C2410885400ADF13F /* Fremie_FriendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2E1B2410885400ADF13F /* Fremie_FriendsUITests.swift */; };
+		9BD1999C24381980006C0D0A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1999A24381980006C0D0A /* DetailViewController.swift */; };
+		9BD1999D24381980006C0D0A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD1999B24381980006C0D0A /* DetailViewController.xib */; };
 		9BDCCC8D241B12810079DA74 /* localFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDCCC8C241B12810079DA74 /* localFriend.swift */; };
 		9BDCCC8F241BB99A0079DA74 /* NewFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDCCC8E241BB99A0079DA74 /* NewFriendViewController.swift */; };
+		9BFB254524380B8B005BC046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFB254424380B8B005BC046 /* Main.storyboard */; };
+		9BFB2583243813D6005BC046 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB2582243813D6005BC046 /* MasterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +51,6 @@
 		9BCB2DF62410885200ADF13F /* Fremie Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fremie Friends.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCB2DF92410885200ADF13F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BCB2DFB2410885200ADF13F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9BCB2DFD2410885200ADF13F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9BCB2E022410885400ADF13F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BCB2E052410885400ADF13F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BCB2E072410885400ADF13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,8 +60,12 @@
 		9BCB2E172410885400ADF13F /* Fremie FriendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fremie FriendsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCB2E1B2410885400ADF13F /* Fremie_FriendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fremie_FriendsUITests.swift; sourceTree = "<group>"; };
 		9BCB2E1D2410885400ADF13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BD1999A24381980006C0D0A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9BD1999B24381980006C0D0A /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		9BDCCC8C241B12810079DA74 /* localFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localFriend.swift; sourceTree = "<group>"; };
 		9BDCCC8E241BB99A0079DA74 /* NewFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFriendViewController.swift; sourceTree = "<group>"; };
+		9BFB254424380B8B005BC046 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9BFB2582243813D6005BC046 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B6A41A32438171100504355 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9BFB254424380B8B005BC046 /* Main.storyboard */,
+				9BCB2E042410885400ADF13F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9B6A41A4243817A000504355 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B23E8672434CC5200DD9AC5 /* FriendsModel.xcdatamodeld */,
+				9BDCCC8C241B12810079DA74 /* localFriend.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9BCB2DED2410885200ADF13F = {
 			isa = PBXGroup;
 			children = (
@@ -112,16 +136,17 @@
 			children = (
 				9B23E8642434253800DD9AC5 /* Fremie Friends.entitlements */,
 				9BCB2DF92410885200ADF13F /* AppDelegate.swift */,
-				9B23E8672434CC5200DD9AC5 /* FriendsModel.xcdatamodeld */,
-				9BDCCC8C241B12810079DA74 /* localFriend.swift */,
 				9BCB2DFB2410885200ADF13F /* SceneDelegate.swift */,
-				9BCB2DFD2410885200ADF13F /* ViewController.swift */,
+				9BFB2582243813D6005BC046 /* MasterViewController.swift */,
+				9BD1999A24381980006C0D0A /* DetailViewController.swift */,
+				9BD1999B24381980006C0D0A /* DetailViewController.xib */,
 				9BDCCC8E241BB99A0079DA74 /* NewFriendViewController.swift */,
 				9B995D6C241C654A00AD9913 /* FriendsListViewController.swift */,
-				9B445AB4241C4DB0009DA00F /* ItemTableViewCell.swift */,
+				9B6A41A4243817A000504355 /* Models */,
+				9B6A41A32438171100504355 /* Storyboards */,
 				9B445AB5241C4DB0009DA00F /* ItemTableViewCell.xib */,
+				9B445AB4241C4DB0009DA00F /* ItemTableViewCell.swift */,
 				9BCB2E022410885400ADF13F /* Assets.xcassets */,
-				9BCB2E042410885400ADF13F /* LaunchScreen.storyboard */,
 				9BCB2E072410885400ADF13F /* Info.plist */,
 			);
 			path = "Fremie Friends";
@@ -251,7 +276,9 @@
 			files = (
 				9BCB2E062410885400ADF13F /* LaunchScreen.storyboard in Resources */,
 				9BCB2E032410885400ADF13F /* Assets.xcassets in Resources */,
+				9BD1999D24381980006C0D0A /* DetailViewController.xib in Resources */,
 				9B445AB7241C4DB0009DA00F /* ItemTableViewCell.xib in Resources */,
+				9BFB254524380B8B005BC046 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD1999C24381980006C0D0A /* DetailViewController.swift in Sources */,
+				9BFB2583243813D6005BC046 /* MasterViewController.swift in Sources */,
 				9BDCCC8F241BB99A0079DA74 /* NewFriendViewController.swift in Sources */,
-				9BCB2DFE2410885200ADF13F /* ViewController.swift in Sources */,
 				9BDCCC8D241B12810079DA74 /* localFriend.swift in Sources */,
 				9BCB2DFA2410885200ADF13F /* AppDelegate.swift in Sources */,
 				9B445AB6241C4DB0009DA00F /* ItemTableViewCell.swift in Sources */,
