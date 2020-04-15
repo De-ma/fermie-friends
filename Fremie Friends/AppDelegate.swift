@@ -129,10 +129,8 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
             }
         }
         
-        let snoozeAction = UNNotificationAction(identifier: "Snooze", title: "Snooze", options: [])
-        let deleteAction = UNNotificationAction(identifier: "DeleteAction", title: "Delete", options: [.destructive])
         let category = UNNotificationCategory(identifier: notification.categoryIdentifier,
-                                              actions: [snoozeAction, deleteAction],
+                                              actions: [],
                                               intentIdentifiers: [],
                                               options: [])
         

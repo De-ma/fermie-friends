@@ -10,7 +10,13 @@ struct localFriend {
 
 enum localType {
     case kombucha
-    case sourdough
+    case sourdough(Feeding)
     case kimchi
     case kefir
+}
+
+struct Feeding {
+    var time: TimeZone
+    var hour: Int
+//    var
 }

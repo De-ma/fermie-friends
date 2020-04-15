@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B23E8692434CC5200DD9AC5 /* FriendsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B23E8672434CC5200DD9AC5 /* FriendsModel.xcdatamodeld */; };
+		9B405E3724425A94009585DB /* BottomSheetDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B405E3624425A94009585DB /* BottomSheetDatePicker.swift */; };
 		9B445AB6241C4DB0009DA00F /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B445AB4241C4DB0009DA00F /* ItemTableViewCell.swift */; };
 		9B445AB7241C4DB0009DA00F /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B445AB5241C4DB0009DA00F /* ItemTableViewCell.xib */; };
 		9B995D6D241C654A00AD9913 /* FriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B995D6C241C654A00AD9913 /* FriendsListViewController.swift */; };
@@ -21,6 +22,10 @@
 		9BD1999D24381980006C0D0A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD1999B24381980006C0D0A /* DetailViewController.xib */; };
 		9BDCCC8D241B12810079DA74 /* localFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDCCC8C241B12810079DA74 /* localFriend.swift */; };
 		9BDCCC8F241BB99A0079DA74 /* NewFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDCCC8E241BB99A0079DA74 /* NewFriendViewController.swift */; };
+		9BEA5DB0244101320080A642 /* FFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA5DAF244101320080A642 /* FFTextField.swift */; };
+		9BEA5DB4244103E40080A642 /* NewFriendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA5DB3244103E40080A642 /* NewFriendViewModel.swift */; };
+		9BEA5DB724410FA80080A642 /* FriendsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA5DB624410FA80080A642 /* FriendsListViewModel.swift */; };
+		9BEA5DB924413EE00080A642 /* BottomSheetPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA5DB824413EE00080A642 /* BottomSheetPicker.swift */; };
 		9BFB254524380B8B005BC046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFB254424380B8B005BC046 /* Main.storyboard */; };
 		9BFB2583243813D6005BC046 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB2582243813D6005BC046 /* MasterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +50,7 @@
 /* Begin PBXFileReference section */
 		9B23E8642434253800DD9AC5 /* Fremie Friends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fremie Friends.entitlements"; sourceTree = "<group>"; };
 		9B23E8682434CC5200DD9AC5 /* FriendsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendsModel.xcdatamodel; sourceTree = "<group>"; };
+		9B405E3624425A94009585DB /* BottomSheetDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetDatePicker.swift; sourceTree = "<group>"; };
 		9B445AB4241C4DB0009DA00F /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		9B445AB5241C4DB0009DA00F /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		9B995D6C241C654A00AD9913 /* FriendsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +70,10 @@
 		9BD1999B24381980006C0D0A /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		9BDCCC8C241B12810079DA74 /* localFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localFriend.swift; sourceTree = "<group>"; };
 		9BDCCC8E241BB99A0079DA74 /* NewFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFriendViewController.swift; sourceTree = "<group>"; };
+		9BEA5DAF244101320080A642 /* FFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFTextField.swift; sourceTree = "<group>"; };
+		9BEA5DB3244103E40080A642 /* NewFriendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFriendViewModel.swift; sourceTree = "<group>"; };
+		9BEA5DB624410FA80080A642 /* FriendsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewModel.swift; sourceTree = "<group>"; };
+		9BEA5DB824413EE00080A642 /* BottomSheetPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetPicker.swift; sourceTree = "<group>"; };
 		9BFB254424380B8B005BC046 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9BFB2582243813D6005BC046 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,12 +150,11 @@
 				9BFB2582243813D6005BC046 /* MasterViewController.swift */,
 				9BD1999A24381980006C0D0A /* DetailViewController.swift */,
 				9BD1999B24381980006C0D0A /* DetailViewController.xib */,
-				9BDCCC8E241BB99A0079DA74 /* NewFriendViewController.swift */,
-				9B995D6C241C654A00AD9913 /* FriendsListViewController.swift */,
+				9BEA5DB12441013B0080A642 /* Custom Components */,
 				9B6A41A4243817A000504355 /* Models */,
 				9B6A41A32438171100504355 /* Storyboards */,
-				9B445AB5241C4DB0009DA00F /* ItemTableViewCell.xib */,
-				9B445AB4241C4DB0009DA00F /* ItemTableViewCell.swift */,
+				9BEA5DB2244103C90080A642 /* NewFriend */,
+				9BEA5DB524410F7E0080A642 /* FriendsList */,
 				9BCB2E022410885400ADF13F /* Assets.xcassets */,
 				9BCB2E072410885400ADF13F /* Info.plist */,
 			);
@@ -168,6 +177,36 @@
 				9BCB2E1D2410885400ADF13F /* Info.plist */,
 			);
 			path = "Fremie FriendsUITests";
+			sourceTree = "<group>";
+		};
+		9BEA5DB12441013B0080A642 /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				9BEA5DAF244101320080A642 /* FFTextField.swift */,
+			);
+			path = "Custom Components";
+			sourceTree = "<group>";
+		};
+		9BEA5DB2244103C90080A642 /* NewFriend */ = {
+			isa = PBXGroup;
+			children = (
+				9BDCCC8E241BB99A0079DA74 /* NewFriendViewController.swift */,
+				9BEA5DB824413EE00080A642 /* BottomSheetPicker.swift */,
+				9B405E3624425A94009585DB /* BottomSheetDatePicker.swift */,
+				9BEA5DB3244103E40080A642 /* NewFriendViewModel.swift */,
+			);
+			path = NewFriend;
+			sourceTree = "<group>";
+		};
+		9BEA5DB524410F7E0080A642 /* FriendsList */ = {
+			isa = PBXGroup;
+			children = (
+				9B445AB5241C4DB0009DA00F /* ItemTableViewCell.xib */,
+				9B445AB4241C4DB0009DA00F /* ItemTableViewCell.swift */,
+				9B995D6C241C654A00AD9913 /* FriendsListViewController.swift */,
+				9BEA5DB624410FA80080A642 /* FriendsListViewModel.swift */,
+			);
+			path = FriendsList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,13 +343,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BD1999C24381980006C0D0A /* DetailViewController.swift in Sources */,
+				9BEA5DB0244101320080A642 /* FFTextField.swift in Sources */,
 				9BFB2583243813D6005BC046 /* MasterViewController.swift in Sources */,
 				9BDCCC8F241BB99A0079DA74 /* NewFriendViewController.swift in Sources */,
+				9BEA5DB724410FA80080A642 /* FriendsListViewModel.swift in Sources */,
 				9BDCCC8D241B12810079DA74 /* localFriend.swift in Sources */,
 				9BCB2DFA2410885200ADF13F /* AppDelegate.swift in Sources */,
+				9BEA5DB4244103E40080A642 /* NewFriendViewModel.swift in Sources */,
 				9B445AB6241C4DB0009DA00F /* ItemTableViewCell.swift in Sources */,
 				9B23E8692434CC5200DD9AC5 /* FriendsModel.xcdatamodeld in Sources */,
+				9B405E3724425A94009585DB /* BottomSheetDatePicker.swift in Sources */,
 				9B995D6D241C654A00AD9913 /* FriendsListViewController.swift in Sources */,
+				9BEA5DB924413EE00080A642 /* BottomSheetPicker.swift in Sources */,
 				9BCB2DFC2410885200ADF13F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -3,15 +3,16 @@ import UIKit
 
 class MasterViewController: UITableViewController {
     
-    let settings = ["Fermie Friends", "Feeding Settings", "Notifications", "Photos"]
+    let settings = ["Feeding Settings", "Notifications", "Photos"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.setRightBarButton(UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(goBack)), animated: true)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Dema")
+        
     }
     
     @objc func goBack() {
-        splitViewController?.showDetailViewController(FriendsListViewController(), sender: nil)
+        self.splitViewController?.showDetailViewController(FriendsListViewController(), sender: self)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -25,8 +26,7 @@ class MasterViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        splitViewController?.showDetailViewController(DetailViewController(), sender: nil)
+        navigationController?.splitViewController?.showDetailViewController(DetailViewController(), sender: self)
     }
 }
 
