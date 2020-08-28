@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		011DEB6F7643EEB541E0350359CD0B8A /* Pods-Fremie FriendsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7310EC4147F04833EE1BBE1441E391A /* Pods-Fremie FriendsTests-dummy.m */; };
+		4387C1CCB38F277F29F90E57092EEBB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		51181054DAA6706FA36D8EC16AC1450B /* Pods-Fremie Friends-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FBE0B0CE705E6D1771DCE8E028D0D7D /* Pods-Fremie Friends-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CE9A7CBC07EA6432A860B650142CDFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A3B368AB9808D4EB9FA51E04CA26615D /* Pods-Fremie Friends-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD5BF6C8B492B6FDAA9D90A55FDA457 /* Pods-Fremie Friends-dummy.m */; };
+		A7D52999FED5BBA3B7EB17304520B7A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BB89D5187863C0C4FAC7F59106B93BD3 /* Pods-Fremie Friends-Fremie FriendsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF80DFC2A3155E91323C15A1AC26BFE /* Pods-Fremie Friends-Fremie FriendsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D22222E9E810519D0BC7A0066ED00960 /* Pods-Fremie FriendsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3218F783C65F82828839C12733463E6D /* Pods-Fremie FriendsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F25CFAD74B3010956C577D7C7B9FCEF1 /* Pods-Fremie Friends-Fremie FriendsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AC515D11325DB5C85C2F7598D0AF9 /* Pods-Fremie Friends-Fremie FriendsUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11934C77422E20D1CBC4BE402DCC55A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		7E979EA7A4FD56F859A77CCD4D9204F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61510502DD3EFE2B67B25268A77FEA3B;
+			remoteInfo = "Pods-Fremie Friends";
+		};
+		C5AF5872A5B3AF2A737CAF27D9133DE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E39A62B3F3A3DCEAB0A8CE1609D5E4 /* Pods_Fremie_FriendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Fremie_FriendsTests.framework; path = "Pods-Fremie FriendsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C2B433B06A3456198DB0C2754E5BEE2 /* Pods-Fremie FriendsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fremie FriendsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3218F783C65F82828839C12733463E6D /* Pods-Fremie FriendsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Fremie FriendsTests-umbrella.h"; sourceTree = "<group>"; };
+		33D6533EE08E942A86E51383CCB5F13A /* Pods-Fremie FriendsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Fremie FriendsTests.modulemap"; sourceTree = "<group>"; };
+		3AA5F3E9599353E8780C32CE2549D24A /* Pods-Fremie FriendsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fremie FriendsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		424B4E7252F1BC483D24D2EC0AF40BCC /* Pods-Fremie FriendsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fremie FriendsTests-Info.plist"; sourceTree = "<group>"; };
+		6DD5BF6C8B492B6FDAA9D90A55FDA457 /* Pods-Fremie Friends-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fremie Friends-dummy.m"; sourceTree = "<group>"; };
+		73B1A21D30345DF4F0C047D98D613F9E /* Pods_Fremie_Friends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Fremie_Friends.framework; path = "Pods-Fremie Friends.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7532E8C9CE5964490F2FCEEA6ED51757 /* Pods-Fremie Friends-Fremie FriendsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fremie Friends-Fremie FriendsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		85239AE7E7802D447CF5A2716651DBF9 /* Pods-Fremie Friends-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fremie Friends-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8A48D696275A465CE8BFD607243E1013 /* Pods-Fremie Friends-Fremie FriendsUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fremie Friends-Fremie FriendsUITests-Info.plist"; sourceTree = "<group>"; };
+		93D8020C220A70B1E3547FE091A5806D /* Pods-Fremie Friends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fremie Friends.release.xcconfig"; sourceTree = "<group>"; };
+		9A0F1029ABFF6BCABA75A0B902989A3B /* Pods-Fremie Friends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fremie Friends.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FBE0B0CE705E6D1771DCE8E028D0D7D /* Pods-Fremie Friends-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Fremie Friends-umbrella.h"; sourceTree = "<group>"; };
+		A7414A34F480F8241019FD3175678799 /* Pods-Fremie FriendsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fremie FriendsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A981FA496C0E9E897301E58485F2BF0D /* Pods-Fremie Friends-Fremie FriendsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fremie Friends-Fremie FriendsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AAF80DFC2A3155E91323C15A1AC26BFE /* Pods-Fremie Friends-Fremie FriendsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Fremie Friends-Fremie FriendsUITests-umbrella.h"; sourceTree = "<group>"; };
+		BB0B876A3C68681DE7AAC9D1359DA0F1 /* Pods-Fremie Friends.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Fremie Friends.modulemap"; sourceTree = "<group>"; };
+		BE357D91B09FF76512FCEE579522549F /* Pods_Fremie_Friends_Fremie_FriendsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Fremie_Friends_Fremie_FriendsUITests.framework; path = "Pods-Fremie Friends-Fremie FriendsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3BC2D1D44A103900D9B29A28F827CDC /* Pods-Fremie Friends-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fremie Friends-acknowledgements.plist"; sourceTree = "<group>"; };
+		C54AC515D11325DB5C85C2F7598D0AF9 /* Pods-Fremie Friends-Fremie FriendsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fremie Friends-Fremie FriendsUITests-dummy.m"; sourceTree = "<group>"; };
+		CBD74587C86776D85C0FF8E9ED34C94D /* Pods-Fremie Friends-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fremie Friends-Info.plist"; sourceTree = "<group>"; };
+		CC2792F6FC3C898336C80BF5552E7515 /* Pods-Fremie Friends-Fremie FriendsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Fremie Friends-Fremie FriendsUITests.modulemap"; sourceTree = "<group>"; };
+		CEE718C96AA574C5E85210F3A76C58A2 /* Pods-Fremie Friends-Fremie FriendsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fremie Friends-Fremie FriendsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7050FDBF538844989D8762938F7F6D1 /* Pods-Fremie Friends-Fremie FriendsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fremie Friends-Fremie FriendsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E7E3C212FCF84C30295A875BED97DDC4 /* Pods-Fremie FriendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fremie FriendsTests.release.xcconfig"; sourceTree = "<group>"; };
+		F7310EC4147F04833EE1BBE1441E391A /* Pods-Fremie FriendsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fremie FriendsTests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3674BE274F75192FB4A23CA5199AE6B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CE9A7CBC07EA6432A860B650142CDFE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D278B5C3785865F36A0F696EB862E73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4387C1CCB38F277F29F90E57092EEBB7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C77518AD92E44586829DF4F65FF7413D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7D52999FED5BBA3B7EB17304520B7A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7375E96905ED16D54818A73DEF52721C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73B1A21D30345DF4F0C047D98D613F9E /* Pods_Fremie_Friends.framework */,
+				BE357D91B09FF76512FCEE579522549F /* Pods_Fremie_Friends_Fremie_FriendsUITests.framework */,
+				00E39A62B3F3A3DCEAB0A8CE1609D5E4 /* Pods_Fremie_FriendsTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E5B06503D213B57434CDFF732742BC1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E331894141196A89D577CA86B31D818F /* Pods-Fremie Friends */,
+				EFE30C37288D952533103B6E8BC5E6C3 /* Pods-Fremie Friends-Fremie FriendsUITests */,
+				85BB30C316A2DF3DE23A0DFBEC117058 /* Pods-Fremie FriendsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */,
+				7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		85BB30C316A2DF3DE23A0DFBEC117058 /* Pods-Fremie FriendsTests */ = {
+			isa = PBXGroup;
+			children = (
+				33D6533EE08E942A86E51383CCB5F13A /* Pods-Fremie FriendsTests.modulemap */,
+				3AA5F3E9599353E8780C32CE2549D24A /* Pods-Fremie FriendsTests-acknowledgements.markdown */,
+				A7414A34F480F8241019FD3175678799 /* Pods-Fremie FriendsTests-acknowledgements.plist */,
+				F7310EC4147F04833EE1BBE1441E391A /* Pods-Fremie FriendsTests-dummy.m */,
+				424B4E7252F1BC483D24D2EC0AF40BCC /* Pods-Fremie FriendsTests-Info.plist */,
+				3218F783C65F82828839C12733463E6D /* Pods-Fremie FriendsTests-umbrella.h */,
+				0C2B433B06A3456198DB0C2754E5BEE2 /* Pods-Fremie FriendsTests.debug.xcconfig */,
+				E7E3C212FCF84C30295A875BED97DDC4 /* Pods-Fremie FriendsTests.release.xcconfig */,
+			);
+			name = "Pods-Fremie FriendsTests";
+			path = "Target Support Files/Pods-Fremie FriendsTests";
+			sourceTree = "<group>";
+		};
+		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D96179D43A67C5D5323B0682D32C133C /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				965877409E01FB3D85D85E90E6B30185 /* Pods */,
+				7375E96905ED16D54818A73DEF52721C /* Products */,
+				7E5B06503D213B57434CDFF732742BC1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D96179D43A67C5D5323B0682D32C133C /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		E331894141196A89D577CA86B31D818F /* Pods-Fremie Friends */ = {
+			isa = PBXGroup;
+			children = (
+				BB0B876A3C68681DE7AAC9D1359DA0F1 /* Pods-Fremie Friends.modulemap */,
+				85239AE7E7802D447CF5A2716651DBF9 /* Pods-Fremie Friends-acknowledgements.markdown */,
+				C3BC2D1D44A103900D9B29A28F827CDC /* Pods-Fremie Friends-acknowledgements.plist */,
+				6DD5BF6C8B492B6FDAA9D90A55FDA457 /* Pods-Fremie Friends-dummy.m */,
+				CBD74587C86776D85C0FF8E9ED34C94D /* Pods-Fremie Friends-Info.plist */,
+				9FBE0B0CE705E6D1771DCE8E028D0D7D /* Pods-Fremie Friends-umbrella.h */,
+				9A0F1029ABFF6BCABA75A0B902989A3B /* Pods-Fremie Friends.debug.xcconfig */,
+				93D8020C220A70B1E3547FE091A5806D /* Pods-Fremie Friends.release.xcconfig */,
+			);
+			name = "Pods-Fremie Friends";
+			path = "Target Support Files/Pods-Fremie Friends";
+			sourceTree = "<group>";
+		};
+		EFE30C37288D952533103B6E8BC5E6C3 /* Pods-Fremie Friends-Fremie FriendsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC2792F6FC3C898336C80BF5552E7515 /* Pods-Fremie Friends-Fremie FriendsUITests.modulemap */,
+				7532E8C9CE5964490F2FCEEA6ED51757 /* Pods-Fremie Friends-Fremie FriendsUITests-acknowledgements.markdown */,
+				A981FA496C0E9E897301E58485F2BF0D /* Pods-Fremie Friends-Fremie FriendsUITests-acknowledgements.plist */,
+				C54AC515D11325DB5C85C2F7598D0AF9 /* Pods-Fremie Friends-Fremie FriendsUITests-dummy.m */,
+				8A48D696275A465CE8BFD607243E1013 /* Pods-Fremie Friends-Fremie FriendsUITests-Info.plist */,
+				AAF80DFC2A3155E91323C15A1AC26BFE /* Pods-Fremie Friends-Fremie FriendsUITests-umbrella.h */,
+				CEE718C96AA574C5E85210F3A76C58A2 /* Pods-Fremie Friends-Fremie FriendsUITests.debug.xcconfig */,
+				D7050FDBF538844989D8762938F7F6D1 /* Pods-Fremie Friends-Fremie FriendsUITests.release.xcconfig */,
+			);
+			name = "Pods-Fremie Friends-Fremie FriendsUITests";
+			path = "Target Support Files/Pods-Fremie Friends-Fremie FriendsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		54B379A72B9A899E1CEDB54A0A928790 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB89D5187863C0C4FAC7F59106B93BD3 /* Pods-Fremie Friends-Fremie FriendsUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ACFD65DDF4ACE796039A26D6AECE376 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D22222E9E810519D0BC7A0066ED00960 /* Pods-Fremie FriendsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983B5AB2C0048CF5EA6DECC977B1A400 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51181054DAA6706FA36D8EC16AC1450B /* Pods-Fremie Friends-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		61510502DD3EFE2B67B25268A77FEA3B /* Pods-Fremie Friends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F573A20850F08F59120051AC7C0BACE7 /* Build configuration list for PBXNativeTarget "Pods-Fremie Friends" */;
+			buildPhases = (
+				983B5AB2C0048CF5EA6DECC977B1A400 /* Headers */,
+				AEC8D6C72847CE16B9C7C3C132947950 /* Sources */,
+				C77518AD92E44586829DF4F65FF7413D /* Frameworks */,
+				9D7987FD008DA42861FE6174A923A196 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAC5167BE17AA913446394718D00596E /* PBXTargetDependency */,
+			);
+			name = "Pods-Fremie Friends";
+			productName = "Pods-Fremie Friends";
+			productReference = 73B1A21D30345DF4F0C047D98D613F9E /* Pods_Fremie_Friends.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		76D37BCEA9F8B40161D767A059C7AC5E /* Pods-Fremie Friends-Fremie FriendsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 940B70BBFB873FF40D204CAFADEF3AAA /* Build configuration list for PBXNativeTarget "Pods-Fremie Friends-Fremie FriendsUITests" */;
+			buildPhases = (
+				54B379A72B9A899E1CEDB54A0A928790 /* Headers */,
+				80053EEF55ADE6E49796019323C20663 /* Sources */,
+				3674BE274F75192FB4A23CA5199AE6B5 /* Frameworks */,
+				0F23AB8B12A12A8D8A1254F0C5748802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCE731ABA203C5A9E0D2855961F29446 /* PBXTargetDependency */,
+			);
+			name = "Pods-Fremie Friends-Fremie FriendsUITests";
+			productName = "Pods-Fremie Friends-Fremie FriendsUITests";
+			productReference = BE357D91B09FF76512FCEE579522549F /* Pods_Fremie_Friends_Fremie_FriendsUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C55AC04D1E9ED517B5ACE80333A723FF /* Pods-Fremie FriendsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51E8836FDDBBA39D488568ACCDF41515 /* Build configuration list for PBXNativeTarget "Pods-Fremie FriendsTests" */;
+			buildPhases = (
+				5ACFD65DDF4ACE796039A26D6AECE376 /* Headers */,
+				04A118BF989827C465F30C90A19D18CE /* Sources */,
+				3D278B5C3785865F36A0F696EB862E73 /* Frameworks */,
+				C5AAFB0469D4822C8345F29804E3527E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92EAEE0720358728A2FFBDF58E61D9FE /* PBXTargetDependency */,
+			);
+			name = "Pods-Fremie FriendsTests";
+			productName = "Pods-Fremie FriendsTests";
+			productReference = 00E39A62B3F3A3DCEAB0A8CE1609D5E4 /* Pods_Fremie_FriendsTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7375E96905ED16D54818A73DEF52721C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61510502DD3EFE2B67B25268A77FEA3B /* Pods-Fremie Friends */,
+				76D37BCEA9F8B40161D767A059C7AC5E /* Pods-Fremie Friends-Fremie FriendsUITests */,
+				C55AC04D1E9ED517B5ACE80333A723FF /* Pods-Fremie FriendsTests */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F23AB8B12A12A8D8A1254F0C5748802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7987FD008DA42861FE6174A923A196 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5AAFB0469D4822C8345F29804E3527E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04A118BF989827C465F30C90A19D18CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011DEB6F7643EEB541E0350359CD0B8A /* Pods-Fremie FriendsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80053EEF55ADE6E49796019323C20663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25CFAD74B3010956C577D7C7B9FCEF1 /* Pods-Fremie Friends-Fremie FriendsUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC8D6C72847CE16B9C7C3C132947950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B368AB9808D4EB9FA51E04CA26615D /* Pods-Fremie Friends-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92EAEE0720358728A2FFBDF58E61D9FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Fremie Friends";
+			target = 61510502DD3EFE2B67B25268A77FEA3B /* Pods-Fremie Friends */;
+			targetProxy = 7E979EA7A4FD56F859A77CCD4D9204F6 /* PBXContainerItemProxy */;
+		};
+		EAC5167BE17AA913446394718D00596E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 11934C77422E20D1CBC4BE402DCC55A6 /* PBXContainerItemProxy */;
+		};
+		FCE731ABA203C5A9E0D2855961F29446 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = C5AF5872A5B3AF2A737CAF27D9133DE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09544E0F3BF4DEDC8650454D47895304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7050FDBF538844989D8762938F7F6D1 /* Pods-Fremie Friends-Fremie FriendsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Fremie Friends-Fremie FriendsUITests/Pods-Fremie Friends-Fremie FriendsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Fremie Friends-Fremie FriendsUITests/Pods-Fremie Friends-Fremie FriendsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1EE8829DF8EF982CFA4E65D7731D454B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7E3C212FCF84C30295A875BED97DDC4 /* Pods-Fremie FriendsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Fremie FriendsTests/Pods-Fremie FriendsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Fremie FriendsTests/Pods-Fremie FriendsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33B82D38FB61BEAB2F9AFADF52C8FE48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C2B433B06A3456198DB0C2754E5BEE2 /* Pods-Fremie FriendsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Fremie FriendsTests/Pods-Fremie FriendsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Fremie FriendsTests/Pods-Fremie FriendsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		46EECD2DED30D7C5FE141C0B267C2D3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55DD740115BE746C8DBB7753806D85D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		907A8606AEF72964A0D9661A76E88638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D8020C220A70B1E3547FE091A5806D /* Pods-Fremie Friends.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Fremie Friends/Pods-Fremie Friends-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Fremie Friends/Pods-Fremie Friends.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		955E35D3624FBE420C67E00E60899820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE718C96AA574C5E85210F3A76C58A2 /* Pods-Fremie Friends-Fremie FriendsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Fremie Friends-Fremie FriendsUITests/Pods-Fremie Friends-Fremie FriendsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Fremie Friends-Fremie FriendsUITests/Pods-Fremie Friends-Fremie FriendsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99BC109AB4879B7060BAC3F005E8B0AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A0F1029ABFF6BCABA75A0B902989A3B /* Pods-Fremie Friends.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Fremie Friends/Pods-Fremie Friends-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Fremie Friends/Pods-Fremie Friends.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51E8836FDDBBA39D488568ACCDF41515 /* Build configuration list for PBXNativeTarget "Pods-Fremie FriendsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33B82D38FB61BEAB2F9AFADF52C8FE48 /* Debug */,
+				1EE8829DF8EF982CFA4E65D7731D454B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		940B70BBFB873FF40D204CAFADEF3AAA /* Build configuration list for PBXNativeTarget "Pods-Fremie Friends-Fremie FriendsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				955E35D3624FBE420C67E00E60899820 /* Debug */,
+				09544E0F3BF4DEDC8650454D47895304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46EECD2DED30D7C5FE141C0B267C2D3F /* Debug */,
+				55DD740115BE746C8DBB7753806D85D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F573A20850F08F59120051AC7C0BACE7 /* Build configuration list for PBXNativeTarget "Pods-Fremie Friends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99BC109AB4879B7060BAC3F005E8B0AA /* Debug */,
+				907A8606AEF72964A0D9661A76E88638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

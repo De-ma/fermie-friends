@@ -26,7 +26,7 @@ class MasterViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.splitViewController?.showDetailViewController(DetailViewController(), sender: self)
+        self.splitViewController?.showDetailViewController(DetailViewController(), sender: self)
     }
 }
 

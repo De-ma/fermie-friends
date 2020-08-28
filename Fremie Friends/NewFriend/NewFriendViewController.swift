@@ -5,7 +5,7 @@ class NewFriendViewController: UIViewController {
     
     var newFriendViewModel = NewFriendViewModel()
     
-    var completionHandler:((localFriend) -> String)?
+    var completionHandler:((LocalFriend) -> String)?
     
     var mainStackView = UIStackView()
     var typeStackView = UIStackView()
@@ -18,7 +18,6 @@ class NewFriendViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.hideKeyboardWhenTappedAround()
         buildViews()
     }
     

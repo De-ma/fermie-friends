@@ -48,13 +48,13 @@ extension FriendsListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return friendsListViewModel.friends.count
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: friendsListViewModel.cellId, for: indexPath) as! ItemTableViewCell //FORCE CAST !!!
-        
+
         let friend = friendsListViewModel.friends[indexPath.row]
         let friendType = friend.value(forKey: "type") as? String
-        
+
         cell.itemImage.image = UIImage(named: friendType?.lowercased() ?? "kombucha") //change default maybe to ?
         return cell
     }

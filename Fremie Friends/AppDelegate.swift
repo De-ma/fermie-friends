@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
     }
-    
+
     // MARK: - Core Data stack
     lazy var persistentContainer: NSPersistentContainer = {
         /*
@@ -59,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
         return container
     }()
-    
+
     // MARK: - Core Data Saving support
     func saveContext () {
         let context = persistentContainer.viewContext
@@ -73,9 +73,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-    
+
     // MARK: - notifications 
-    
+
     func registerForPushNotifications() {
         notificationCenter.delegate = self
         let options: UNAuthorizationOptions = [.alert, .sound, .badge]
@@ -92,23 +92,23 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter,
                                 willPresent notification: UNNotification,
                                 withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        
+    
         completionHandler([.alert, .sound])
     }
-    
+
     func userNotificationCenter(_ center: UNUserNotificationCenter,
                                 didReceive response: UNNotificationResponse,
                                 withCompletionHandler completionHandler: @escaping () -> Void) {
-        
+    
         if response.notification.request.identifier == "Local Notification" {
             print("Handling notifications with the Local Notification Identifier")
         }
-        
+       
         completionHandler()
     }
-    
+
     func scheduleNotification(notificationType: String) {
-        
+    
         let notification: UNMutableNotificationContent = {
             let notif = UNMutableNotificationContent()
             notif.title = "Feeding Time!!!"
@@ -118,23 +118,22 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
             notif.categoryIdentifier = "Feed Notification Type"
             return notif
         }()
-        
+    
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         let identifier = "notification"
         let request = UNNotificationRequest(identifier: identifier, content: notification, trigger: trigger)
-        
+    
         notificationCenter.add(request) { (error) in
             if let error = error {
                 print("Error \(error.localizedDescription)")
             }
         }
-        
+    
         let category = UNNotificationCategory(identifier: notification.categoryIdentifier,
                                               actions: [],
                                               intentIdentifiers: [],
                                               options: [])
-        
+    
         notificationCenter.setNotificationCategories([category])
     }
 }
-

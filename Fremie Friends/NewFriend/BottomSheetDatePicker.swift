@@ -13,7 +13,7 @@ class BottomSheetDatePicker: UIView {
         
         datePicker.setDate(Date.init(), animated: false)
         datePicker.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        datePicker.datePickerMode = .date
+        datePicker.datePickerMode = .time
         datePicker.translatesAutoresizingMaskIntoConstraints = false
         
         self.addSubview(datePicker)

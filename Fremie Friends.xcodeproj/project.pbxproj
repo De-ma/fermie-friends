@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		013206E4A3DC806FC84F9BAC /* Pods_Fremie_FriendsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3574F9C91AA1D0371F52371 /* Pods_Fremie_FriendsTests.framework */; };
+		689A5B03CD26D93C5CD11122 /* Pods_Fremie_Friends_Fremie_FriendsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C693762A6C49047A1C692200 /* Pods_Fremie_Friends_Fremie_FriendsUITests.framework */; };
+		8098FD7B61965397A1817670 /* Pods_Fremie_Friends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8040F7F2666F1B1FA92A60E /* Pods_Fremie_Friends.framework */; };
 		9B23E8692434CC5200DD9AC5 /* FriendsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B23E8672434CC5200DD9AC5 /* FriendsModel.xcdatamodeld */; };
 		9B405E3724425A94009585DB /* BottomSheetDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B405E3624425A94009585DB /* BottomSheetDatePicker.swift */; };
 		9B445AB6241C4DB0009DA00F /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B445AB4241C4DB0009DA00F /* ItemTableViewCell.swift */; };
@@ -20,8 +23,9 @@
 		9BCB2E1C2410885400ADF13F /* Fremie_FriendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB2E1B2410885400ADF13F /* Fremie_FriendsUITests.swift */; };
 		9BD1999C24381980006C0D0A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1999A24381980006C0D0A /* DetailViewController.swift */; };
 		9BD1999D24381980006C0D0A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD1999B24381980006C0D0A /* DetailViewController.xib */; };
-		9BDCCC8D241B12810079DA74 /* localFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDCCC8C241B12810079DA74 /* localFriend.swift */; };
+		9BDCCC8D241B12810079DA74 /* LocalFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDCCC8C241B12810079DA74 /* LocalFriend.swift */; };
 		9BDCCC8F241BB99A0079DA74 /* NewFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDCCC8E241BB99A0079DA74 /* NewFriendViewController.swift */; };
+		9BE353EE24475FC000323E5D /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE353ED24475FC000323E5D /* UIView+Animations.swift */; };
 		9BEA5DB0244101320080A642 /* FFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA5DAF244101320080A642 /* FFTextField.swift */; };
 		9BEA5DB4244103E40080A642 /* NewFriendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA5DB3244103E40080A642 /* NewFriendViewModel.swift */; };
 		9BEA5DB724410FA80080A642 /* FriendsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA5DB624410FA80080A642 /* FriendsListViewModel.swift */; };
@@ -48,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22DFD5175DD5C4CF0E6B5A42 /* Pods-Fremie Friends-Fremie FriendsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fremie Friends-Fremie FriendsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fremie Friends-Fremie FriendsUITests/Pods-Fremie Friends-Fremie FriendsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		316B7C07FCA84D1D19DF2F14 /* Pods-Fremie FriendsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fremie FriendsTests.debug.xcconfig"; path = "Target Support Files/Pods-Fremie FriendsTests/Pods-Fremie FriendsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A7D9FD101C0E31A116AD268 /* Pods-Fremie Friends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fremie Friends.debug.xcconfig"; path = "Target Support Files/Pods-Fremie Friends/Pods-Fremie Friends.debug.xcconfig"; sourceTree = "<group>"; };
+		89F8084EEEBEF8A3D44DE2A5 /* Pods-Fremie Friends-Fremie FriendsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fremie Friends-Fremie FriendsUITests.release.xcconfig"; path = "Target Support Files/Pods-Fremie Friends-Fremie FriendsUITests/Pods-Fremie Friends-Fremie FriendsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9B23E8642434253800DD9AC5 /* Fremie Friends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fremie Friends.entitlements"; sourceTree = "<group>"; };
 		9B23E8682434CC5200DD9AC5 /* FriendsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendsModel.xcdatamodel; sourceTree = "<group>"; };
 		9B405E3624425A94009585DB /* BottomSheetDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetDatePicker.swift; sourceTree = "<group>"; };
@@ -68,14 +76,20 @@
 		9BCB2E1D2410885400ADF13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BD1999A24381980006C0D0A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9BD1999B24381980006C0D0A /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
-		9BDCCC8C241B12810079DA74 /* localFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localFriend.swift; sourceTree = "<group>"; };
+		9BDCCC8C241B12810079DA74 /* LocalFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFriend.swift; sourceTree = "<group>"; };
 		9BDCCC8E241BB99A0079DA74 /* NewFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFriendViewController.swift; sourceTree = "<group>"; };
+		9BE353ED24475FC000323E5D /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
 		9BEA5DAF244101320080A642 /* FFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFTextField.swift; sourceTree = "<group>"; };
 		9BEA5DB3244103E40080A642 /* NewFriendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFriendViewModel.swift; sourceTree = "<group>"; };
 		9BEA5DB624410FA80080A642 /* FriendsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewModel.swift; sourceTree = "<group>"; };
 		9BEA5DB824413EE00080A642 /* BottomSheetPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetPicker.swift; sourceTree = "<group>"; };
 		9BFB254424380B8B005BC046 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9BFB2582243813D6005BC046 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		AC29A2236627E71DD1CB83BF /* Pods-Fremie Friends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fremie Friends.release.xcconfig"; path = "Target Support Files/Pods-Fremie Friends/Pods-Fremie Friends.release.xcconfig"; sourceTree = "<group>"; };
+		C3574F9C91AA1D0371F52371 /* Pods_Fremie_FriendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fremie_FriendsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C693762A6C49047A1C692200 /* Pods_Fremie_Friends_Fremie_FriendsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fremie_Friends_Fremie_FriendsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8040F7F2666F1B1FA92A60E /* Pods_Fremie_Friends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fremie_Friends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50A080B65EEF54D4B773B52 /* Pods-Fremie FriendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fremie FriendsTests.release.xcconfig"; path = "Target Support Files/Pods-Fremie FriendsTests/Pods-Fremie FriendsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8098FD7B61965397A1817670 /* Pods_Fremie_Friends.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013206E4A3DC806FC84F9BAC /* Pods_Fremie_FriendsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,12 +113,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				689A5B03CD26D93C5CD11122 /* Pods_Fremie_Friends_Fremie_FriendsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27D096A17596233647E71779 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8040F7F2666F1B1FA92A60E /* Pods_Fremie_Friends.framework */,
+				C693762A6C49047A1C692200 /* Pods_Fremie_Friends_Fremie_FriendsUITests.framework */,
+				C3574F9C91AA1D0371F52371 /* Pods_Fremie_FriendsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B6A41A32438171100504355 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				9B23E8672434CC5200DD9AC5 /* FriendsModel.xcdatamodeld */,
-				9BDCCC8C241B12810079DA74 /* localFriend.swift */,
+				9BDCCC8C241B12810079DA74 /* LocalFriend.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -128,6 +155,8 @@
 				9BCB2E0F2410885400ADF13F /* Fremie FriendsTests */,
 				9BCB2E1A2410885400ADF13F /* Fremie FriendsUITests */,
 				9BCB2DF72410885200ADF13F /* Products */,
+				E5DEB18D4C6AE31A3D949B65 /* Pods */,
+				27D096A17596233647E71779 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +186,7 @@
 				9BEA5DB524410F7E0080A642 /* FriendsList */,
 				9BCB2E022410885400ADF13F /* Assets.xcassets */,
 				9BCB2E072410885400ADF13F /* Info.plist */,
+				9BE353ED24475FC000323E5D /* UIView+Animations.swift */,
 			);
 			path = "Fremie Friends";
 			sourceTree = "<group>";
@@ -209,6 +239,19 @@
 			path = FriendsList;
 			sourceTree = "<group>";
 		};
+		E5DEB18D4C6AE31A3D949B65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A7D9FD101C0E31A116AD268 /* Pods-Fremie Friends.debug.xcconfig */,
+				AC29A2236627E71DD1CB83BF /* Pods-Fremie Friends.release.xcconfig */,
+				22DFD5175DD5C4CF0E6B5A42 /* Pods-Fremie Friends-Fremie FriendsUITests.debug.xcconfig */,
+				89F8084EEEBEF8A3D44DE2A5 /* Pods-Fremie Friends-Fremie FriendsUITests.release.xcconfig */,
+				316B7C07FCA84D1D19DF2F14 /* Pods-Fremie FriendsTests.debug.xcconfig */,
+				D50A080B65EEF54D4B773B52 /* Pods-Fremie FriendsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BCB2E202410885400ADF13F /* Build configuration list for PBXNativeTarget "Fremie Friends" */;
 			buildPhases = (
+				BE5985B256C8959A50A1EC08 /* [CP] Check Pods Manifest.lock */,
 				9BCB2DF22410885200ADF13F /* Sources */,
 				9BCB2DF32410885200ADF13F /* Frameworks */,
 				9BCB2DF42410885200ADF13F /* Resources */,
+				9B8907C82450D214001B0158 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -233,6 +278,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BCB2E232410885400ADF13F /* Build configuration list for PBXNativeTarget "Fremie FriendsTests" */;
 			buildPhases = (
+				B6D3F570B3DCE137D1D32441 /* [CP] Check Pods Manifest.lock */,
 				9BCB2E082410885400ADF13F /* Sources */,
 				9BCB2E092410885400ADF13F /* Frameworks */,
 				9BCB2E0A2410885400ADF13F /* Resources */,
@@ -251,6 +297,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BCB2E262410885400ADF13F /* Build configuration list for PBXNativeTarget "Fremie FriendsUITests" */;
 			buildPhases = (
+				F52607D9D906791EE6ABE376 /* [CP] Check Pods Manifest.lock */,
 				9BCB2E132410885400ADF13F /* Sources */,
 				9BCB2E142410885400ADF13F /* Frameworks */,
 				9BCB2E152410885400ADF13F /* Resources */,
@@ -337,6 +384,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9B8907C82450D214001B0158 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		B6D3F570B3DCE137D1D32441 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fremie FriendsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE5985B256C8959A50A1EC08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fremie Friends-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F52607D9D906791EE6ABE376 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fremie Friends-Fremie FriendsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9BCB2DF22410885200ADF13F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -344,10 +478,11 @@
 			files = (
 				9BD1999C24381980006C0D0A /* DetailViewController.swift in Sources */,
 				9BEA5DB0244101320080A642 /* FFTextField.swift in Sources */,
+				9BE353EE24475FC000323E5D /* UIView+Animations.swift in Sources */,
 				9BFB2583243813D6005BC046 /* MasterViewController.swift in Sources */,
 				9BDCCC8F241BB99A0079DA74 /* NewFriendViewController.swift in Sources */,
 				9BEA5DB724410FA80080A642 /* FriendsListViewModel.swift in Sources */,
-				9BDCCC8D241B12810079DA74 /* localFriend.swift in Sources */,
+				9BDCCC8D241B12810079DA74 /* LocalFriend.swift in Sources */,
 				9BCB2DFA2410885200ADF13F /* AppDelegate.swift in Sources */,
 				9BEA5DB4244103E40080A642 /* NewFriendViewModel.swift in Sources */,
 				9B445AB6241C4DB0009DA00F /* ItemTableViewCell.swift in Sources */,
@@ -518,6 +653,7 @@
 		};
 		9BCB2E212410885400ADF13F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A7D9FD101C0E31A116AD268 /* Pods-Fremie Friends.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Fremie Friends/Fremie Friends.entitlements";
@@ -539,6 +675,7 @@
 		};
 		9BCB2E222410885400ADF13F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC29A2236627E71DD1CB83BF /* Pods-Fremie Friends.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Fremie Friends/Fremie Friends.entitlements";
@@ -560,6 +697,7 @@
 		};
 		9BCB2E242410885400ADF13F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 316B7C07FCA84D1D19DF2F14 /* Pods-Fremie FriendsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -581,6 +719,7 @@
 		};
 		9BCB2E252410885400ADF13F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D50A080B65EEF54D4B773B52 /* Pods-Fremie FriendsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -602,6 +741,7 @@
 		};
 		9BCB2E272410885400ADF13F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DFD5175DD5C4CF0E6B5A42 /* Pods-Fremie Friends-Fremie FriendsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -621,6 +761,7 @@
 		};
 		9BCB2E282410885400ADF13F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F8084EEEBEF8A3D44DE2A5 /* Pods-Fremie Friends-Fremie FriendsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
