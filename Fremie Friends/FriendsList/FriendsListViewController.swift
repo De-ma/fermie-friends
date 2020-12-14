@@ -5,6 +5,7 @@ import CoreData
 class FriendsListViewController: UITableViewController {
     
     let friendsListViewModel = FriendsListViewModel()
+    let emptyFriendsListView = EmptyFriendsListView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +18,14 @@ class FriendsListViewController: UITableViewController {
         
         //add the navigation thing
         self.title = "Fermie Friends!"
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+
+        self.tableView.backgroundView = emptyFriendsListView
         self.navigationItem.setRightBarButton(UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(newFriend)), animated: true)
         self.navigationItem.setLeftBarButton(UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(showMaster)), animated: true)
+        
+        emptyFriendsListView.addButton.addTarget(self, action: #selector(newFriend), for: .touchDown)
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,13 +46,23 @@ class FriendsListViewController: UITableViewController {
     
     @objc func showMaster() {
         let masterViewController = MasterViewController()
-        self.navigationController?.modalPresentationStyle = .pageSheet
-        self.navigationController?.present(masterViewController, animated: true, completion: nil)
+//        self.navigationController?.modalPresentationStyle = .
+        self.navigationController?.pushViewController(masterViewController, animated: true)
+//        self.navigationController?.present(masterViewController, animated: true, completion: nil)
+//        self.navigationController?.show(masterViewController, sender: self)
     }
 }
 
 extension FriendsListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if (friendsListViewModel.friends.count == 0) {
+            tableView.separatorStyle = .none
+            tableView.backgroundView?.isHidden = false
+        } else {
+            tableView.separatorStyle = .singleLine
+            tableView.backgroundView?.isHidden = true
+        }
+            
         return friendsListViewModel.friends.count
     }
 

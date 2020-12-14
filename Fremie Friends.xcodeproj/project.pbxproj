@@ -32,6 +32,7 @@
 		9BEA5DB924413EE00080A642 /* BottomSheetPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA5DB824413EE00080A642 /* BottomSheetPicker.swift */; };
 		9BFB254524380B8B005BC046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFB254424380B8B005BC046 /* Main.storyboard */; };
 		9BFB2583243813D6005BC046 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB2582243813D6005BC046 /* MasterViewController.swift */; };
+		B343970A25802C0B00EE36E0 /* EmptyFriendsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343970925802C0B00EE36E0 /* EmptyFriendsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		9BFB254424380B8B005BC046 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9BFB2582243813D6005BC046 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		AC29A2236627E71DD1CB83BF /* Pods-Fremie Friends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fremie Friends.release.xcconfig"; path = "Target Support Files/Pods-Fremie Friends/Pods-Fremie Friends.release.xcconfig"; sourceTree = "<group>"; };
+		B343970925802C0B00EE36E0 /* EmptyFriendsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyFriendsListView.swift; sourceTree = "<group>"; };
 		C3574F9C91AA1D0371F52371 /* Pods_Fremie_FriendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fremie_FriendsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C693762A6C49047A1C692200 /* Pods_Fremie_Friends_Fremie_FriendsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fremie_Friends_Fremie_FriendsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8040F7F2666F1B1FA92A60E /* Pods_Fremie_Friends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fremie_Friends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +237,7 @@
 				9B445AB4241C4DB0009DA00F /* ItemTableViewCell.swift */,
 				9B995D6C241C654A00AD9913 /* FriendsListViewController.swift */,
 				9BEA5DB624410FA80080A642 /* FriendsListViewModel.swift */,
+				B343970925802C0B00EE36E0 /* EmptyFriendsListView.swift */,
 			);
 			path = FriendsList;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				9BFB2583243813D6005BC046 /* MasterViewController.swift in Sources */,
 				9BDCCC8F241BB99A0079DA74 /* NewFriendViewController.swift in Sources */,
 				9BEA5DB724410FA80080A642 /* FriendsListViewModel.swift in Sources */,
+				B343970A25802C0B00EE36E0 /* EmptyFriendsListView.swift in Sources */,
 				9BDCCC8D241B12810079DA74 /* LocalFriend.swift in Sources */,
 				9BCB2DFA2410885200ADF13F /* AppDelegate.swift in Sources */,
 				9BEA5DB4244103E40080A642 /* NewFriendViewModel.swift in Sources */,
