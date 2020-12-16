@@ -8,8 +8,8 @@ class BottomSheetDatePicker: UIView {
     
     override init(frame: CGRect) {
       super.init(frame: frame)
-        self.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        self.layer.borderWidth = 2.5
+//        self.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+//        self.layer.borderWidth = 2.5
         
         datePicker.setDate(Date.init(), animated: false)
         datePicker.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -29,14 +29,16 @@ class BottomSheetDatePicker: UIView {
         nextButton.layer.shadowRadius = 5
         nextButton.setTitleColor(UIColor.init(cgColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)), for: .normal)
         nextButton.backgroundColor = #colorLiteral(red: 0.9949683547, green: 0.7712727189, blue: 0, alpha: 1)
-        nextButton.addTarget(self, action: #selector(animateButton), for: .touchDown)
+//        nextButton.addTarget(self, action: #selector(animateButton), for: .touchDown)
         
         nextButton.translatesAutoresizingMaskIntoConstraints = false
         
         nextButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20).isActive = true
-        nextButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50).isActive = true
-        nextButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 25).isActive = true
-        nextButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
+//        nextButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50).isActive = true
+        nextButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20).isActive = true
+        nextButton.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20).isActive = true
+
+//        nextButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
         datePicker.translatesAutoresizingMaskIntoConstraints = false
         datePicker.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50).isActive = true

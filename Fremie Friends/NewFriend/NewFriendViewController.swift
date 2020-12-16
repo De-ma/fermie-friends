@@ -4,21 +4,30 @@ import UIKit
 class NewFriendViewController: UIViewController {
     
     var newFriendViewModel = NewFriendViewModel()
+    var newFriendSuccessModal = NewFriendSuccessModal()
     
     var completionHandler:((LocalFriend) -> String)?
     
     var mainStackView = UIStackView()
     var typeStackView = UIStackView()
+    var reminderStackView = UIStackView()
+    
+    let typeLabel = UILabel()
+    let reminderLabel = UILabel()
+
     var friendName = FFTextField()
     var picker = BottomSheetPicker()
     var datePicker = BottomSheetDatePicker()
 
     var friendName2 = ""
     var selectedRow = "Kombucha"
-
+    var typeLabelText = "What kind of fermentation is "
+    var reminderLabelText = "When should we remind you to feed "
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        buildViews()
+        view.addSubview(newFriendSuccessModal)
+//        buildViews()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -54,53 +63,14 @@ class NewFriendViewController: UIViewController {
             return textField
         }()
 
-        let typeLabel: UILabel = {
-            let label = UILabel()
-            label.text = "What kind of fermie is your friend?"
-            label.font = label.font.withSize(21)
-            label.textColor = #colorLiteral(red: 0.4549019608, green: 0.3254901961, blue: 0.007843137255, alpha: 1)
-            return label
-        }()
-
-        let dateLabel: UILabel = {
-            let label = UILabel()
-            label.textColor = #colorLiteral(red: 0.4549019608, green: 0.3254901961, blue: 0.007843137255, alpha: 1)
-            label.text = "Birthday:"
-            label.font = label.font.withSize(21)
-            label.translatesAutoresizingMaskIntoConstraints = false
-            return label
-        }()
+        typeLabel.text = typeLabelText
+        typeLabel.font = typeLabel.font.withSize(21)
+        typeLabel.textColor = #colorLiteral(red: 0.4549019608, green: 0.3254901961, blue: 0.007843137255, alpha: 1)
         
-        let addFriendButton: UIButton = {
-            let button = UIButton()
-            button.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
-            button.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
-            button.setTitle("Create Friend!", for: .normal)
-            button.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-            button.layer.borderWidth = 1
-            button.layer.cornerRadius = 4
-            button.translatesAutoresizingMaskIntoConstraints = false
-            button.addTarget(self, action: #selector(createNewFriend), for: .touchDown)
-            return button
-        }()
-        
-        let feedingLabel: UILabel = {
-            let label = UILabel()
-            label.textColor = #colorLiteral(red: 0.4549019608, green: 0.3254901961, blue: 0.007843137255, alpha: 1)
-            label.text = "Setup reminders to feed your friend?"
-            label.font = label.font.withSize(21)
-            label.translatesAutoresizingMaskIntoConstraints = false
-            return label
-        }()
-        
-        let reminderLabel: UILabel = {
-            let label = UILabel()
-            label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-            label.text = "Set up reminders"
-            label.font = label.font.withSize(21)
-            label.translatesAutoresizingMaskIntoConstraints = false
-            return label
-        }()
+        reminderLabel.text = "When should we remind you to feed unnamed"
+        reminderLabel.numberOfLines = 2
+        reminderLabel.font = reminderLabel.font.withSize(21)
+        reminderLabel.textColor = #colorLiteral(red: 0.4549019608, green: 0.3254901961, blue: 0.007843137255, alpha: 1)
 
         mainStackView = {
             let stackView = UIStackView()
@@ -126,6 +96,17 @@ class NewFriendViewController: UIViewController {
             stackView.tag = 1
             return stackView
         }()
+        
+        reminderStackView = {
+                    let stackView = UIStackView()
+                    stackView.axis = .vertical
+                    stackView.translatesAutoresizingMaskIntoConstraints = false
+                    stackView.alignment = .top
+                    stackView.distribution = .equalSpacing
+                    stackView.addArrangedSubview(reminderLabel)
+                    stackView.tag = 2
+                    return stackView
+    }()
             
         picker.pickerView.delegate = self
         picker.pickerView.dataSource = self
@@ -151,6 +132,14 @@ class NewFriendViewController: UIViewController {
         self.buildDatePickerView()
     }
     
+    
+    @objc func donePushed() {
+        self.typeStackView.removeFromSuperview()
+        self.typeStackView.isHidden = true
+        self.picker.removeFromSuperview()
+        self.buildDatePickerView()
+    }
+    
     private func animate() {
         UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseOut, animations: {
              self.mainStackView.transform = CGAffineTransform(translationX: self.mainStackView.bounds.origin.x - 500, y: self.mainStackView.bounds.origin.y)}, completion: nil)
@@ -169,10 +158,24 @@ class NewFriendViewController: UIViewController {
         }
     }
     
+    private func nextDatePickerView() {
+        if !typeStackView.isHidden {
+                
+            UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseIn, animations: {
+                self.mainStackView.transform = CGAffineTransform(translationX: self.mainStackView.bounds.origin.x - 1000, y: self.mainStackView.bounds.origin.y)
+            }, completion: { _ in
+                self.typeStackView.removeFromSuperview()
+                self.typeStackView.isHidden = true
+                self.buildDatePickerView()
+            })
+        }
+    }
+    
     private func buildNameView() {
         view.addSubview(mainStackView)
 
         mainStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50).isActive = true
+//        mainStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         mainStackView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: 100).isActive = true
     }
     
@@ -197,17 +200,24 @@ class NewFriendViewController: UIViewController {
     }
     
     private func buildDatePickerView() {
-//        self.view.addSubview(self.typeStackView)
+        self.view.addSubview(self.reminderStackView)
         self.view.addSubview(self.datePicker)
         
-        self.datePicker.nextButton.addTarget(self, action: #selector(nextPushed), for: .touchDown)
+        self.datePicker.nextButton.addTarget(self, action: #selector(donePushed), for: .touchDown)
         
         self.datePicker.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 200).isActive = true
         self.datePicker.widthAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.widthAnchor).isActive = true
         self.datePicker.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height / 2.5).isActive = true
         
+                        
+        self.reminderStackView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 50).isActive = true
+        self.reminderStackView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor, constant: 100).isActive = true
+        
         UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseOut, animations: {
               self.datePicker.transform = CGAffineTransform(translationX: self.datePicker.bounds.origin.x, y: self.datePicker.bounds.origin.y - 200)}, completion: nil)
+        
+        UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseOut, animations: {
+             self.reminderStackView.transform = CGAffineTransform(translationX: self.reminderStackView.bounds.origin.x - 500, y: self.reminderStackView.bounds.origin.y)}, completion: nil)
     }
 }
 
@@ -216,6 +226,8 @@ extension NewFriendViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print("another trigger")
         friendName2 = textField.text ?? "Unnamed"
+        typeLabelText = "What kind of fermentation is \(friendName2)"
+        reminderLabelText = "When should we remind you to feed \(friendName2)"
         textField.resignFirstResponder()
         nextView()
         return true

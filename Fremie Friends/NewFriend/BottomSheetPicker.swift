@@ -9,8 +9,8 @@ class BottomSheetPicker: UIView {
     override init(frame: CGRect) {
       super.init(frame: frame)
 //        self.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.7514140365, blue: 0.6431372762, alpha: 1)
-        self.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        self.layer.borderWidth = 2.5
+//        self.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+//        self.layer.borderWidth = 2.5
 //        self.layer.cornerRadius = 15
         
         self.addSubview(pickerView)
@@ -31,9 +31,10 @@ class BottomSheetPicker: UIView {
         nextButton.translatesAutoresizingMaskIntoConstraints = false
         
         nextButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20).isActive = true
-        nextButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50).isActive = true
-        nextButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 25).isActive = true
-        nextButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
+//        nextButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50).isActive = true
+        nextButton.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20).isActive = true
+        nextButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20).isActive = true
+//        nextButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
         pickerView.translatesAutoresizingMaskIntoConstraints = false
         pickerView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50).isActive = true
