@@ -1,7 +1,6 @@
 import Foundation
 import UIKit
 
-
 class NewFriendSuccessModal: UIView {
     
     var hasUpdatedConstraints = false
@@ -12,7 +11,6 @@ class NewFriendSuccessModal: UIView {
     var dismissButton = UIButton()
     var titleLabel = UILabel()
     var descriptionLabel = UILabel()
-//    var icon = UIImage
     
     private let imageViewHeight: CGFloat = 60
     private let imageViewWidth: CGFloat = 60

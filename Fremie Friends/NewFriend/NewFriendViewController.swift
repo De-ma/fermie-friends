@@ -26,8 +26,9 @@ class NewFriendViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(newFriendSuccessModal)
-//        buildViews()
+//        view.addSubview(newFriendSuccessModal)
+        newFriendSuccessModal.dismissButton.addTarget(self, action: #selector(dismissModal), for: .touchDown)
+        buildViews()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -117,12 +118,18 @@ class NewFriendViewController: UIViewController {
     @objc func createNewFriend() {
         //name, type, birthday!
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd MMMM yyyy"
-//        let selectedDate = dateFormatter.string(from: datePicker.date)
+        dateFormatter.dateFormat = "hh:mm a"
+        let selectedDate = dateFormatter.string(from: datePicker.datePicker.date)
 //        print(selectedDate)
         print(friendName.text ?? "No name :(")
         print(selectedRow)
-//        let friend = localFriend(localName: friendName.text ?? "No name :(", localBirthday: selectedDate, localType: selectedRow)
+        let friend = LocalFriend(localName: friendName.text ?? "unnamed", localBirthday: selectedDate, localType: selectedRow)
+        _ = self.completionHandler?(friend)
+        self.view.addSubview(newFriendSuccessModal)
+    }
+    
+    @objc func dismissModal() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc func nextPushed() {
@@ -203,7 +210,7 @@ class NewFriendViewController: UIViewController {
         self.view.addSubview(self.reminderStackView)
         self.view.addSubview(self.datePicker)
         
-        self.datePicker.nextButton.addTarget(self, action: #selector(donePushed), for: .touchDown)
+        self.datePicker.nextButton.addTarget(self, action: #selector(createNewFriend), for: .touchDown)
         
         self.datePicker.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 200).isActive = true
         self.datePicker.widthAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.widthAnchor).isActive = true
@@ -226,8 +233,10 @@ extension NewFriendViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print("another trigger")
         friendName2 = textField.text ?? "Unnamed"
-        typeLabelText = "What kind of fermentation is \(friendName2)"
-        reminderLabelText = "When should we remind you to feed \(friendName2)"
+        typeLabelText = "What kind of fermentation is \(friendName2)?"
+        reminderLabelText = "When should we remind you to feed \(friendName2)?"
+        self.typeLabel.text = typeLabelText
+        self.reminderLabel.text = reminderLabelText
         textField.resignFirstResponder()
         nextView()
         return true
