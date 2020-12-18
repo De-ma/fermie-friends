@@ -14,7 +14,7 @@ class FriendsListViewController: UITableViewController {
         
         let nib = UINib(nibName: "ItemTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: friendsListViewModel.cellId)
-        tableView.isScrollEnabled = false
+        tableView.isScrollEnabled = true
         
         //add the navigation thing
         self.title = "Fermie Friends!"
@@ -46,7 +46,6 @@ class FriendsListViewController: UITableViewController {
     
     @objc func showMaster() {
         let masterViewController = MasterViewController()
-//        self.navigationController?.modalPresentationStyle = .
         self.navigationController?.pushViewController(masterViewController, animated: true)
 //        self.navigationController?.present(masterViewController, animated: true, completion: nil)
 //        self.navigationController?.show(masterViewController, sender: self)
@@ -73,12 +72,16 @@ extension FriendsListViewController {
         let friendType = friend.value(forKey: "type") as? String
 
         cell.itemImage.image = UIImage(named: friendType?.lowercased() ?? "kombucha") //change default maybe to ?
+        cell.itemTitle.text = friend.value(forKey: "name") as? String
         return cell
     }
 }
 
 extension FriendsListViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+//        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let friendDetailViewController = FriendDetailViewController()
+        friendDetailViewController.name =  self.navigationController?.pushViewController(friendDetailViewController, animated: true)
     }
 }

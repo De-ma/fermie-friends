@@ -26,7 +26,6 @@ class NewFriendViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.addSubview(newFriendSuccessModal)
         newFriendSuccessModal.dismissButton.addTarget(self, action: #selector(dismissModal), for: .touchDown)
         buildViews()
     }
@@ -38,7 +37,7 @@ class NewFriendViewController: UIViewController {
 
     func buildViews() {
         view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        
+                
         picker.translatesAutoresizingMaskIntoConstraints = false
         datePicker.translatesAutoresizingMaskIntoConstraints = false
         
@@ -46,7 +45,7 @@ class NewFriendViewController: UIViewController {
             let label = UILabel()
             label.text = "What’s Your New Fermie Friend’s Name?"
             label.font = label.font.withSize(21)
-            label.textColor = #colorLiteral(red: 0.4549019608, green: 0.3254901961, blue: 0.007843137255, alpha: 1)
+            label.textColor = #colorLiteral(red: 0.1298420429, green: 0.1298461258, blue: 0.1298439503, alpha: 1)
             return label
         }()
     
@@ -66,12 +65,12 @@ class NewFriendViewController: UIViewController {
 
         typeLabel.text = typeLabelText
         typeLabel.font = typeLabel.font.withSize(21)
-        typeLabel.textColor = #colorLiteral(red: 0.4549019608, green: 0.3254901961, blue: 0.007843137255, alpha: 1)
+        typeLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
         reminderLabel.text = "When should we remind you to feed unnamed"
         reminderLabel.numberOfLines = 2
         reminderLabel.font = reminderLabel.font.withSize(21)
-        reminderLabel.textColor = #colorLiteral(red: 0.4549019608, green: 0.3254901961, blue: 0.007843137255, alpha: 1)
+        reminderLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
 
         mainStackView = {
             let stackView = UIStackView()
@@ -120,12 +119,11 @@ class NewFriendViewController: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "hh:mm a"
         let selectedDate = dateFormatter.string(from: datePicker.datePicker.date)
-//        print(selectedDate)
         print(friendName.text ?? "No name :(")
         print(selectedRow)
         let friend = LocalFriend(localName: friendName.text ?? "unnamed", localBirthday: selectedDate, localType: selectedRow)
         _ = self.completionHandler?(friend)
-        self.view.addSubview(newFriendSuccessModal)
+        animateModal()
     }
     
     @objc func dismissModal() {
@@ -139,13 +137,6 @@ class NewFriendViewController: UIViewController {
         self.buildDatePickerView()
     }
     
-    
-    @objc func donePushed() {
-        self.typeStackView.removeFromSuperview()
-        self.typeStackView.isHidden = true
-        self.picker.removeFromSuperview()
-        self.buildDatePickerView()
-    }
     
     private func animate() {
         UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseOut, animations: {
@@ -182,8 +173,14 @@ class NewFriendViewController: UIViewController {
         view.addSubview(mainStackView)
 
         mainStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50).isActive = true
-//        mainStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         mainStackView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: 100).isActive = true
+    }
+    
+    private func animateModal() {
+        self.view.addSubview(newFriendSuccessModal)
+
+//        UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseOut, animations: {
+//            self.newFriendSuccessModal.transform = CGAffineTransform(translationX: (UIScreen.main.bounds.width * 0.5) + 150, y: (UIScreen.main.bounds.height * 0.5) - 1150)}, completion: nil)
     }
     
     private func buildPickerView() {
@@ -263,15 +260,3 @@ extension NewFriendViewController: UIPickerViewDelegate, UIPickerViewDataSource 
         nextView()
     }
 }
-
-//extension UIViewController {
-//    func hideKeyboardWhenTappedAround() {
-//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-//        tap.cancelsTouchesInView = false
-//        view.addGestureRecognizer(tap)
-//    }
-//
-//    @objc func dismissKeyboard() {
-//        view.endEditing(true)
-//    }
-//}

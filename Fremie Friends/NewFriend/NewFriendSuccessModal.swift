@@ -86,10 +86,13 @@ class NewFriendSuccessModal: UIView {
         dismissButton.titleLabel?.center = dismissButton.center
         dismissButton.backgroundColor = #colorLiteral(red: 0.2196078431, green: 0.7137254902, blue: 0.2392156863, alpha: 1)
         dismissButton.setTitle("Dismiss", for: .normal)
+//        dismissButton.addTarget(self, action: #selector(animateButton), for: .touchDown)
+
         
         self.addSubview(imageView)
         self.addSubview(titleLabel)
         self.addSubview(descriptionLabel)
         self.addSubview(dismissButton)
     }
+    
 }

@@ -8,8 +8,7 @@ class BottomSheetDatePicker: UIView {
     
     override init(frame: CGRect) {
       super.init(frame: frame)
-//        self.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-//        self.layer.borderWidth = 2.5
+
         
         datePicker.setDate(Date.init(), animated: false)
         datePicker.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -20,8 +19,7 @@ class BottomSheetDatePicker: UIView {
         self.addSubview(nextButton)
         
         nextButton.backgroundColor = .clear
-        nextButton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        nextButton.layer.borderWidth = 2
+        nextButton.layer.shadowOpacity = 0.2
         nextButton.layer.cornerRadius = 15
         nextButton.setTitle("Done", for: .normal)
         nextButton.layer.shadowColor = UIColor.black.cgColor
@@ -29,16 +27,14 @@ class BottomSheetDatePicker: UIView {
         nextButton.layer.shadowRadius = 5
         nextButton.setTitleColor(UIColor.init(cgColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)), for: .normal)
         nextButton.backgroundColor = #colorLiteral(red: 0.9949683547, green: 0.7712727189, blue: 0, alpha: 1)
-//        nextButton.addTarget(self, action: #selector(animateButton), for: .touchDown)
+        nextButton.addTarget(self, action: #selector(animateButton), for: .touchDown)
+        
         
         nextButton.translatesAutoresizingMaskIntoConstraints = false
-        
         nextButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20).isActive = true
-//        nextButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50).isActive = true
-        nextButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20).isActive = true
+        nextButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50).isActive = true
         nextButton.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20).isActive = true
-
-//        nextButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        nextButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20).isActive = true
         
         datePicker.translatesAutoresizingMaskIntoConstraints = false
         datePicker.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50).isActive = true
@@ -56,17 +52,14 @@ class BottomSheetDatePicker: UIView {
     
     @objc func animateButton() {
 
-     nextButton.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
-
-     UIView.animate(withDuration: 2.0,
-                                delay: 0,
-                                usingSpringWithDamping: CGFloat(0.20),
-                                initialSpringVelocity: CGFloat(6.0),
-                                options: UIView.AnimationOptions.allowUserInteraction,
-                                animations: {
-                                    self.nextButton.transform = CGAffineTransform.identity
-         },
-                                completion: nil)
-    }
-    
+        
+        let pulse = CASpringAnimation(keyPath: "transform.scale")
+        pulse.duration = 0.4
+        pulse.fromValue = 0.98
+        pulse.toValue = 1.0
+        pulse.initialVelocity = 0.5
+        pulse.damping = 1.0
+        self.nextButton.layer.add(pulse, forKey: nil)
+     
+     }
 }
