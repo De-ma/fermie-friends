@@ -29,4 +29,3 @@ class MasterViewController: UITableViewController {
         self.splitViewController?.showDetailViewController(DetailViewController(), sender: self)
     }
 }
-

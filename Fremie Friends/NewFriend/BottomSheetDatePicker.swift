@@ -9,7 +9,6 @@ class BottomSheetDatePicker: UIView {
     override init(frame: CGRect) {
       super.init(frame: frame)
 
-        
         datePicker.setDate(Date.init(), animated: false)
         datePicker.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         datePicker.datePickerMode = .time
@@ -28,7 +27,6 @@ class BottomSheetDatePicker: UIView {
         nextButton.setTitleColor(UIColor.init(cgColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)), for: .normal)
         nextButton.backgroundColor = #colorLiteral(red: 0.9949683547, green: 0.7712727189, blue: 0, alpha: 1)
         nextButton.addTarget(self, action: #selector(animateButton), for: .touchDown)
-        
         
         nextButton.translatesAutoresizingMaskIntoConstraints = false
         nextButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20).isActive = true
@@ -51,8 +49,6 @@ class BottomSheetDatePicker: UIView {
     }
     
     @objc func animateButton() {
-
-        
         let pulse = CASpringAnimation(keyPath: "transform.scale")
         pulse.duration = 0.4
         pulse.fromValue = 0.98

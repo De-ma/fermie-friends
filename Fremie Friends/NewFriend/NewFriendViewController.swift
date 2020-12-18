@@ -178,9 +178,6 @@ class NewFriendViewController: UIViewController {
     
     private func animateModal() {
         self.view.addSubview(newFriendSuccessModal)
-
-//        UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseOut, animations: {
-//            self.newFriendSuccessModal.transform = CGAffineTransform(translationX: (UIScreen.main.bounds.width * 0.5) + 150, y: (UIScreen.main.bounds.height * 0.5) - 1150)}, completion: nil)
     }
     
     private func buildPickerView() {

@@ -38,26 +38,19 @@ class NewFriendSuccessModal: UIView {
     }
     
     func buildView() {
-        
         imageView = UIImageView(image: image)
         imageView.frame = CGRect(x: frame.midX - imageViewHeight - 30, y: -30, width: imageViewWidth, height: imageViewHeight)
 
-        
         let circlePath = UIBezierPath(arcCenter: CGPoint(x: frame.midX - 60, y: 0), radius: CGFloat(40), startAngle: CGFloat(0), endAngle: CGFloat(Double.pi * 2), clockwise: true)
 
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = circlePath.cgPath
 
-        //change the fill color
         shapeLayer.fillColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-        //you can change the stroke color
-//        shapeLayer.strokeColor = UIColor.red.cgColor
-        //you can change the line width
         shapeLayer.lineWidth = 3.0
 
         self.layer.addSublayer(shapeLayer)
 
-        
         titleLabel.text = "Awesome!"
         titleLabel.numberOfLines = 1
         titleLabel.center.x = self.center.x
@@ -86,8 +79,6 @@ class NewFriendSuccessModal: UIView {
         dismissButton.titleLabel?.center = dismissButton.center
         dismissButton.backgroundColor = #colorLiteral(red: 0.2196078431, green: 0.7137254902, blue: 0.2392156863, alpha: 1)
         dismissButton.setTitle("Dismiss", for: .normal)
-//        dismissButton.addTarget(self, action: #selector(animateButton), for: .touchDown)
-
         
         self.addSubview(imageView)
         self.addSubview(titleLabel)

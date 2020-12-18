@@ -58,7 +58,6 @@ class BottomSheetPicker: UIView {
                                 completion: nil)
     
     }
-    
 }
 
 extension UIView {

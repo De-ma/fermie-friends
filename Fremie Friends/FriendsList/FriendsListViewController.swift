@@ -47,8 +47,6 @@ class FriendsListViewController: UITableViewController {
     @objc func showMaster() {
         let masterViewController = MasterViewController()
         self.navigationController?.pushViewController(masterViewController, animated: true)
-//        self.navigationController?.present(masterViewController, animated: true, completion: nil)
-//        self.navigationController?.show(masterViewController, sender: self)
     }
 }
 
@@ -82,6 +80,6 @@ extension FriendsListViewController {
 //        tableView.deselectRow(at: indexPath, animated: true)
         
         let friendDetailViewController = FriendDetailViewController()
-        friendDetailViewController.name =  self.navigationController?.pushViewController(friendDetailViewController, animated: true)
+    self.navigationController?.pushViewController(friendDetailViewController, animated: true)
     }
 }
