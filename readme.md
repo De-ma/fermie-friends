@@ -1,3 +1,9 @@
 # fermie friends
 
-[figmuh](https://www.figma.com/file/VdPJJi3bcjWEA0Ee9D7ezW/Untitled?node-id=0%3A1)
+How to run:
+1. Have XCode installed on local computer
+2. Open the Fremie Friends.workspace file 
+3. Run application on Iphone 11 Pro Max (For best UI results)
+
+
+I've written all the code for this project (See Fremie friends folder)  and didn't use any external code/frameworks
