@@ -43,7 +43,7 @@ class NewFriendViewController: UIViewController {
         
         let friendLabel: UILabel = {
             let label = UILabel()
-            label.text = "What’s Your New Fermie Friend’s Name?"
+            label.text = "What’s your new fermie friend’s name?"
             label.font = label.font.withSize(21)
             label.textColor = #colorLiteral(red: 0.1298420429, green: 0.1298461258, blue: 0.1298439503, alpha: 1)
             return label
@@ -67,9 +67,10 @@ class NewFriendViewController: UIViewController {
         typeLabel.font = typeLabel.font.withSize(21)
         typeLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
-        reminderLabel.text = "When should we remind you to feed unnamed"
+        reminderLabel.text = "When do you want to feed unnamed"
         reminderLabel.numberOfLines = 2
         reminderLabel.font = reminderLabel.font.withSize(21)
+        reminderLabel.sizeToFit()
         reminderLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
 
         mainStackView = {
@@ -228,7 +229,7 @@ extension NewFriendViewController: UITextFieldDelegate {
         print("another trigger")
         friendName2 = textField.text ?? "Unnamed"
         typeLabelText = "What kind of fermentation is \(friendName2)?"
-        reminderLabelText = "When should we remind you to feed \(friendName2)?"
+        reminderLabelText = "When do you want to feed \(friendName2)?"
         self.typeLabel.text = typeLabelText
         self.reminderLabel.text = reminderLabelText
         textField.resignFirstResponder()

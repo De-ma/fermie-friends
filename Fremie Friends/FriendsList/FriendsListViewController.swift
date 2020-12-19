@@ -6,6 +6,8 @@ class FriendsListViewController: UITableViewController {
     
     let friendsListViewModel = FriendsListViewModel()
     let emptyFriendsListView = EmptyFriendsListView()
+    
+    var appDelegate = UIApplication.shared.delegate as? AppDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,7 +81,16 @@ extension FriendsListViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        tableView.deselectRow(at: indexPath, animated: true)
         
-        let friendDetailViewController = FriendDetailViewController()
-    self.navigationController?.pushViewController(friendDetailViewController, animated: true)
+        let friend = friendsListViewModel.friends[indexPath.row]
+        let friendName = friend.value(forKey: "name") as? String ?? "unnamed"
+
+        guard let notificationType = friend.value(forKey: "name") as? String else { return }
+
+        self.appDelegate?.scheduleNotification(notificationType: notificationType)
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        let friendDetailViewController = FriendDetailViewController(name: friendName)
+        self.navigationController?.pushViewController(friendDetailViewController, animated: true)
+
     }
 }

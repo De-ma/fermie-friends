@@ -9,16 +9,36 @@ class FriendDetailViewController: UIViewController {
     
     private var fermentationNameLabel = UILabel()
     
+    
     var name = ""
     var feedTime = ""
     var type = ""
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+    convenience init(name: String) {
+        self.init()
+
+        self.name = name
+        // Do other setup
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        print(name)
+        
+        print("building")
+        fermentationNameLabel.text = name
+        fermentationNameLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        fermentationNameLabel.font = fermentationNameLabel.font.withSize(35)
+        fermentationNameLabel.sizeToFit()
+        
+        fermentationNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(fermentationNameLabel)
+        
+        fermentationNameLabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 125).isActive = true
+        fermentationNameLabel.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor, constant: 30).isActive = true
+//        fermentationNameLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
+//        fermentationNameLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
     }
 }

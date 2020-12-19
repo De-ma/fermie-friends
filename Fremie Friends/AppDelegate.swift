@@ -111,8 +111,8 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     
         let notification: UNMutableNotificationContent = {
             let notif = UNMutableNotificationContent()
-            notif.title = "Feeding Time!!!"
-            notif.body = "Time to feed: " + notificationType
+            notif.title = "Feeding Time for \(notificationType)"
+            notif.body = "\(notificationType) is now ready to be fed."
             notif.sound = UNNotificationSound.default
             notif.badge = 1
             notif.categoryIdentifier = "Feed Notification Type"
@@ -129,11 +129,15 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
             }
         }
     
+        
+        let snoozeAction = UNNotificationAction(identifier: "Snooze", title: "Snooze 5 minutes", options: [])
+        let deleteAction = UNNotificationAction(identifier: "DeleteAction", title: "Dismiss", options: [.destructive])
+        
         let category = UNNotificationCategory(identifier: notification.categoryIdentifier,
-                                              actions: [],
+                                              actions: [snoozeAction, deleteAction],
                                               intentIdentifiers: [],
                                               options: [])
-    
+
         notificationCenter.setNotificationCategories([category])
     }
 }
